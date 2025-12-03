@@ -1,0 +1,1664 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- START CSS -->
+    <link rel="stylesheet" href="./css/global.css" />
+  </head>
+  <body dir="rtl" class="min-h-[1000px]">
+    <!-- START HEADER -->
+    <header class="header">
+      <div class="container flex flex-col gap-y-4">
+        <div class="flex lg:hidden items-center justify-between">
+          <div class="flex items-center gap-x-5">
+            <button class="btn btn-primary btn-ghost w-[42px] h-[42px]! group">
+              <i class="group-hover:**:stroke-white">
+                <svg
+                  width="16"
+                  height="14"
+                  viewBox="0 0 16 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.75 12.75H14.75M0.75 0.75H14.75M0.75 6.75H14.75"
+                    stroke="#209AFF"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </i>
+            </button>
+            <a
+              href="#"
+              class="btn btn-primary btn-ghost w-[42px] h-[42px]! group"
+            >
+              <i class="group-hover:**:stroke-white">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 19.1115C5 16.6984 6.69732 14.643 9.00404 14.2627L9.21182 14.2284C11.0589 13.9239 12.9411 13.9239 14.7882 14.2284L14.996 14.2627C17.3027 14.643 19 16.6984 19 19.1115C19 20.1545 18.1815 21 17.1719 21H6.82813C5.81848 21 5 20.1545 5 19.1115Z"
+                    stroke="#209AFF"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M16.0834 6.9375C16.0834 9.11212 14.2552 10.875 12 10.875C9.74486 10.875 7.91669 9.11212 7.91669 6.9375C7.91669 4.76288 9.74486 3 12 3C14.2552 3 16.0834 4.76288 16.0834 6.9375Z"
+                    stroke="#209AFF"
+                    stroke-width="1.5"
+                  />
+                </svg>
+              </i>
+            </a>
+          </div>
+          <a href="#">
+            <figure class="flex items-center gap-x-2">
+              <img src="./images/logo-mobile.png" alt="Logo" />
+              <figcaption>
+                <p class="text-xs font-semibold text-sky-blue">
+                  Sleep<span class="text-[#0054F7]!">SHiman</span>
+                </p>
+                <p class="text-2xs font-medium text-black/50 mt-0.5">
+                  کالای خواب شیمانا
+                </p>
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+        <div class="hidden lg:flex w-full items-center gap-x-8 pt-2.5">
+          <a href="#">
+            <figure class="flex items-center gap-x-4">
+              <img src="./images/logo.png" alt="Logo" />
+              <figcaption>
+                <p class="text-xl font-semibold text-sky-blue">
+                  Sleep<span class="text-[#0054F7]!">SHiman</span>
+                </p>
+                <p class="font-medium text-black/50 mt-0.5">
+                  کالای خواب شیمانا
+                </p>
+              </figcaption>
+            </figure>
+          </a>
+          <nav>
+            <ul
+              class="flex items-center gap-x-8 *:text-dark *:font-medium *:hover:text-primary *:transition-colors *:duration-100"
+            >
+              <li>
+                <a href="#">اسلیپیران</a>
+              </li>
+              <li><a href="">درباره ما</a></li>
+              <li><a href="">تماس با ما</a></li>
+              <li><a href="">راهنمای خرید</a></li>
+              <li><a href="">مجله کالای خواب</a></li>
+            </ul>
+          </nav>
+          <div class="flex items-center gap-x-4 mr-auto">
+            <a href="#" class="btn btn-outline btn-primary group">
+              <i class="group-hover:**:stroke-white">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 19.1115C5 16.6984 6.69732 14.643 9.00404 14.2627L9.21182 14.2284C11.0589 13.9239 12.9411 13.9239 14.7882 14.2284L14.996 14.2627C17.3027 14.643 19 16.6984 19 19.1115C19 20.1545 18.1815 21 17.1719 21H6.82813C5.81848 21 5 20.1545 5 19.1115Z"
+                    stroke="#209AFF"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M16.0834 6.9375C16.0834 9.11212 14.2552 10.875 12 10.875C9.74486 10.875 7.91669 9.11212 7.91669 6.9375C7.91669 4.76288 9.74486 3 12 3C14.2552 3 16.0834 4.76288 16.0834 6.9375Z"
+                    stroke="#209AFF"
+                    stroke-width="1.5"
+                  />
+                </svg>
+              </i>
+              ورود/عضویت
+            </a>
+            <a href="#" class="btn btn-primary btn-icon">
+              <i>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.5 18C8.32843 18 9 18.6716 9 19.5C9 20.3284 8.32843 21 7.5 21C6.67157 21 6 20.3284 6 19.5C6 18.6716 6.67157 18 7.5 18Z"
+                    stroke="white"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M16.5 18.0001C17.3284 18.0001 18 18.6716 18 19.5001C18 20.3285 17.3284 21.0001 16.5 21.0001C15.6716 21.0001 15 20.3285 15 19.5001C15 18.6716 15.6716 18.0001 16.5 18.0001Z"
+                    stroke="white"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M2 3L2.26121 3.09184C3.5628 3.54945 4.2136 3.77826 4.58584 4.32298C4.95808 4.86771 4.95808 5.59126 4.95808 7.03836V9.76C4.95808 12.7016 5.02132 13.6723 5.88772 14.5862C6.75412 15.5 8.14857 15.5 10.9375 15.5H12M16.2404 15.5C17.8014 15.5 18.5819 15.5 19.1336 15.0504C19.6853 14.6008 19.8429 13.8364 20.158 12.3075L20.6578 9.88275C21.0049 8.14369 21.1784 7.27417 20.7345 6.69708C20.2906 6.12 18.7738 6.12 17.0888 6.12H11.0235M4.95808 6.12H7"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </i>
+            </a>
+          </div>
+        </div>
+        <div class="hidden lg:flex items-center justify-between gap-x-4">
+          <nav>
+            <ul class="flex items-center gap-x-2 relative">
+              <li
+                class="relative flex items-center gap-x-1 px-3 py-1 text-gray-1 group before:absolute before:content-[''] before:w-full before:top-full before:h-5"
+              >
+                <a
+                  href="#"
+                  class="flex items-center gap-x-1 group-hover:text-primary group"
+                >
+                  کالای خواب
+                  <i class="group-hover:**:fill-primary">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M2.95388 5.67461C3.13359 5.46495 3.44924 5.44067 3.6589 5.62038L8.00017 9.34147L12.3414 5.62038C12.5511 5.44067 12.8668 5.46495 13.0465 5.67461C13.2262 5.88428 13.2019 6.19993 12.9922 6.37964L8.32557 10.3796C8.13832 10.5401 7.86202 10.5401 7.67478 10.3796L3.00811 6.37964C2.79845 6.19993 2.77417 5.88428 2.95388 5.67461Z"
+                        fill="#2F3136"
+                      />
+                    </svg>
+                  </i>
+                </a>
+                <div
+                  class="dropdown-menu absolute mt-4 top-full right-0 w-[234px] bg-white p-4 opacity-0 scale-95 invisible group-hover:opacity-100 group-hover:scale-100 group-hover:visible transition-all duration-200 ease-out"
+                >
+                  <ul class="flex flex-col gap-y-4">
+                    <li>
+                      <details class="group w-full cursor-pointer">
+                        <summary
+                          class="flex items-center justify-between text-base font-medium list-none"
+                        >
+                          بر اساس برند
+                          <svg
+                            class="w-5 h-5 transition-transform duration-200 group-open:rotate-180"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M4.43 8.51c.27-.31.74-.35 1.06-.08L12 14.01l6.51-5.58c.32-.27.79-.23 1.06.08s.23.79-.08 1.06l-7 6c-.28.24-.69.24-.98 0l-7-6a.74.74 0 01-.08-1.06z"
+                              fill="#030303"
+                            />
+                          </svg>
+                        </summary>
+
+                        <ul class="flex flex-col gap-y-3 pr-8 mt-4">
+                          <li
+                            class="text-sm font-normal text-gray-600 list-disc"
+                          >
+                            <a href="#">آیتم یک</a>
+                          </li>
+                          <li
+                            class="text-sm font-normal text-gray-600 list-disc"
+                          >
+                            <a href="#">آیتم دو</a>
+                          </li>
+                          <li
+                            class="text-sm font-normal text-gray-600 list-disc"
+                          >
+                            <a href="#">آیتم سه</a>
+                          </li>
+                        </ul>
+                      </details>
+                    </li>
+                    <li>
+                      <details class="group w-full cursor-pointer">
+                        <summary
+                          class="flex items-center justify-between text-base font-medium list-none"
+                        >
+                          بر اساس برند
+                          <svg
+                            class="w-5 h-5 transition-transform duration-200 group-open:rotate-180"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M4.43 8.51c.27-.31.74-.35 1.06-.08L12 14.01l6.51-5.58c.32-.27.79-.23 1.06.08s.23.79-.08 1.06l-7 6c-.28.24-.69.24-.98 0l-7-6a.74.74 0 01-.08-1.06z"
+                              fill="#030303"
+                            />
+                          </svg>
+                        </summary>
+
+                        <ul class="flex flex-col gap-y-3 pr-8 mt-4">
+                          <li
+                            class="text-sm font-normal text-gray-600 list-disc"
+                          >
+                            <a href="#">آیتم یک</a>
+                          </li>
+                          <li
+                            class="text-sm font-normal text-gray-600 list-disc"
+                          >
+                            <a href="#">آیتم دو</a>
+                          </li>
+                          <li
+                            class="text-sm font-normal text-gray-600 list-disc"
+                          >
+                            <a href="#">آیتم سه</a>
+                          </li>
+                        </ul>
+                      </details>
+                    </li>
+                    <li>
+                      <details class="group w-full cursor-pointer">
+                        <summary
+                          class="flex items-center justify-between text-base font-medium list-none"
+                        >
+                          بر اساس برند
+                          <svg
+                            class="w-5 h-5 transition-transform duration-200 group-open:rotate-180"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M4.43 8.51c.27-.31.74-.35 1.06-.08L12 14.01l6.51-5.58c.32-.27.79-.23 1.06.08s.23.79-.08 1.06l-7 6c-.28.24-.69.24-.98 0l-7-6a.74.74 0 01-.08-1.06z"
+                              fill="#030303"
+                            />
+                          </svg>
+                        </summary>
+
+                        <ul class="flex flex-col gap-y-3 pr-8 mt-4">
+                          <li
+                            class="text-sm font-normal text-gray-600 list-disc"
+                          >
+                            <a href="#">آیتم یک</a>
+                          </li>
+                          <li
+                            class="text-sm font-normal text-gray-600 list-disc"
+                          >
+                            <a href="#">آیتم دو</a>
+                          </li>
+                          <li
+                            class="text-sm font-normal text-gray-600 list-disc"
+                          >
+                            <a href="#">آیتم سه</a>
+                          </li>
+                        </ul>
+                      </details>
+                    </li>
+                    <li>
+                      <details class="group w-full cursor-pointer">
+                        <summary
+                          class="flex items-center justify-between text-base font-medium list-none"
+                        >
+                          بر اساس برند
+                          <svg
+                            class="w-5 h-5 transition-transform duration-200 group-open:rotate-180"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M4.43 8.51c.27-.31.74-.35 1.06-.08L12 14.01l6.51-5.58c.32-.27.79-.23 1.06.08s.23.79-.08 1.06l-7 6c-.28.24-.69.24-.98 0l-7-6a.74.74 0 01-.08-1.06z"
+                              fill="#030303"
+                            />
+                          </svg>
+                        </summary>
+
+                        <ul class="flex flex-col gap-y-3 pr-8 mt-4">
+                          <li
+                            class="text-sm font-normal text-gray-600 list-disc"
+                          >
+                            <a href="#">آیتم یک</a>
+                          </li>
+                          <li
+                            class="text-sm font-normal text-gray-600 list-disc"
+                          >
+                            <a href="#">آیتم دو</a>
+                          </li>
+                          <li
+                            class="text-sm font-normal text-gray-600 list-disc"
+                          >
+                            <a href="#">آیتم سه</a>
+                          </li>
+                        </ul>
+                      </details>
+                    </li>
+                    <li>
+                      <details class="group w-full cursor-pointer">
+                        <summary
+                          class="flex items-center justify-between text-base font-medium list-none"
+                        >
+                          بر اساس برند
+                          <svg
+                            class="w-5 h-5 transition-transform duration-200 group-open:rotate-180"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M4.43 8.51c.27-.31.74-.35 1.06-.08L12 14.01l6.51-5.58c.32-.27.79-.23 1.06.08s.23.79-.08 1.06l-7 6c-.28.24-.69.24-.98 0l-7-6a.74.74 0 01-.08-1.06z"
+                              fill="#030303"
+                            />
+                          </svg>
+                        </summary>
+
+                        <ul class="flex flex-col gap-y-3 pr-8 mt-4">
+                          <li
+                            class="text-sm font-normal text-gray-600 list-disc"
+                          >
+                            <a href="#">آیتم یک</a>
+                          </li>
+                          <li
+                            class="text-sm font-normal text-gray-600 list-disc"
+                          >
+                            <a href="#">آیتم دو</a>
+                          </li>
+                          <li
+                            class="text-sm font-normal text-gray-600 list-disc"
+                          >
+                            <a href="#">آیتم سه</a>
+                          </li>
+                        </ul>
+                      </details>
+                    </li>
+                    <li>
+                      <details class="group w-full cursor-pointer">
+                        <summary
+                          class="flex items-center justify-between text-base font-medium list-none"
+                        >
+                          بر اساس برند
+                          <svg
+                            class="w-5 h-5 transition-transform duration-200 group-open:rotate-180"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M4.43 8.51c.27-.31.74-.35 1.06-.08L12 14.01l6.51-5.58c.32-.27.79-.23 1.06.08s.23.79-.08 1.06l-7 6c-.28.24-.69.24-.98 0l-7-6a.74.74 0 01-.08-1.06z"
+                              fill="#030303"
+                            />
+                          </svg>
+                        </summary>
+
+                        <ul class="flex flex-col gap-y-3 pr-8 mt-4">
+                          <li
+                            class="text-sm font-normal text-gray-600 list-disc"
+                          >
+                            <a href="#">آیتم یک</a>
+                          </li>
+                          <li
+                            class="text-sm font-normal text-gray-600 list-disc"
+                          >
+                            <a href="#">آیتم دو</a>
+                          </li>
+                          <li
+                            class="text-sm font-normal text-gray-600 list-disc"
+                          >
+                            <a href="#">آیتم سه</a>
+                          </li>
+                        </ul>
+                      </details>
+                    </li>
+                    <li>
+                      <details class="group w-full cursor-pointer">
+                        <summary
+                          class="flex items-center justify-between text-base font-medium list-none"
+                        >
+                          بر اساس برند
+                          <svg
+                            class="w-5 h-5 transition-transform duration-200 group-open:rotate-180"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M4.43 8.51c.27-.31.74-.35 1.06-.08L12 14.01l6.51-5.58c.32-.27.79-.23 1.06.08s.23.79-.08 1.06l-7 6c-.28.24-.69.24-.98 0l-7-6a.74.74 0 01-.08-1.06z"
+                              fill="#030303"
+                            />
+                          </svg>
+                        </summary>
+
+                        <ul class="flex flex-col gap-y-3 pr-8 mt-4">
+                          <li
+                            class="text-sm font-normal text-gray-600 list-disc"
+                          >
+                            <a href="#">آیتم یک</a>
+                          </li>
+                          <li
+                            class="text-sm font-normal text-gray-600 list-disc"
+                          >
+                            <a href="#">آیتم دو</a>
+                          </li>
+                          <li
+                            class="text-sm font-normal text-gray-600 list-disc"
+                          >
+                            <a href="#">آیتم سه</a>
+                          </li>
+                        </ul>
+                      </details>
+                    </li>
+                  </ul>
+                  <a
+                    href="#"
+                    class="flex items-center justify-between text-lg font-medium text-secondary-shade-1 pt-3 mt-6 border-t border-secondary-shade-1"
+                  >
+                    راهنمای خرید تشک
+                    <i>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M15.4881 4.43057C15.8026 4.70014 15.839 5.17361 15.5694 5.48811L9.98779 12L15.5694 18.5119C15.839 18.8264 15.8026 19.2999 15.4881 19.5695C15.1736 19.839 14.7001 19.8026 14.4305 19.4881L8.43054 12.4881C8.1898 12.2072 8.1898 11.7928 8.43054 11.5119L14.4305 4.51192C14.7001 4.19743 15.1736 4.161 15.4881 4.43057Z"
+                          fill="#D98B31"
+                        />
+                      </svg>
+                    </i>
+                  </a>
+                </div>
+              </li>
+              <li class="flex items-center gap-x-1 px-3 py-1 text-gray-1">
+                <a
+                  href="#"
+                  class="flex items-center gap-x-1 hover:text-primary group"
+                >
+                  تشک
+                  <i class="group-hover:**:fill-primary">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M2.95388 5.67461C3.13359 5.46495 3.44924 5.44067 3.6589 5.62038L8.00017 9.34147L12.3414 5.62038C12.5511 5.44067 12.8668 5.46495 13.0465 5.67461C13.2262 5.88428 13.2019 6.19993 12.9922 6.37964L8.32557 10.3796C8.13832 10.5401 7.86202 10.5401 7.67478 10.3796L3.00811 6.37964C2.79845 6.19993 2.77417 5.88428 2.95388 5.67461Z"
+                        fill="#2F3136"
+                      />
+                    </svg>
+                  </i>
+                </a>
+              </li>
+              <li class="flex items-center gap-x-1 px-3 py-1 text-gray-1">
+                <a
+                  href="#"
+                  class="flex items-center gap-x-1 hover:text-primary group"
+                >
+                  رو تختی
+                  <i class="group-hover:**:fill-primary">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M2.95388 5.67461C3.13359 5.46495 3.44924 5.44067 3.6589 5.62038L8.00017 9.34147L12.3414 5.62038C12.5511 5.44067 12.8668 5.46495 13.0465 5.67461C13.2262 5.88428 13.2019 6.19993 12.9922 6.37964L8.32557 10.3796C8.13832 10.5401 7.86202 10.5401 7.67478 10.3796L3.00811 6.37964C2.79845 6.19993 2.77417 5.88428 2.95388 5.67461Z"
+                        fill="#2F3136"
+                      />
+                    </svg>
+                  </i>
+                </a>
+              </li>
+              <li class="flex items-center gap-x-1 px-3 py-1 text-gray-1">
+                <a
+                  href="#"
+                  class="flex items-center gap-x-1 hover:text-primary group"
+                >
+                  تخت خواب
+                  <i class="group-hover:**:fill-primary">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M2.95388 5.67461C3.13359 5.46495 3.44924 5.44067 3.6589 5.62038L8.00017 9.34147L12.3414 5.62038C12.5511 5.44067 12.8668 5.46495 13.0465 5.67461C13.2262 5.88428 13.2019 6.19993 12.9922 6.37964L8.32557 10.3796C8.13832 10.5401 7.86202 10.5401 7.67478 10.3796L3.00811 6.37964C2.79845 6.19993 2.77417 5.88428 2.95388 5.67461Z"
+                        fill="#2F3136"
+                      />
+                    </svg>
+                  </i>
+                </a>
+              </li>
+              <li class="flex items-center gap-x-1 px-3 py-1 text-gray-1">
+                <a
+                  href="#"
+                  class="flex items-center gap-x-1 hover:text-primary group"
+                >
+                  محافظ تشک
+                  <i class="group-hover:**:fill-primary">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M2.95388 5.67461C3.13359 5.46495 3.44924 5.44067 3.6589 5.62038L8.00017 9.34147L12.3414 5.62038C12.5511 5.44067 12.8668 5.46495 13.0465 5.67461C13.2262 5.88428 13.2019 6.19993 12.9922 6.37964L8.32557 10.3796C8.13832 10.5401 7.86202 10.5401 7.67478 10.3796L3.00811 6.37964C2.79845 6.19993 2.77417 5.88428 2.95388 5.67461Z"
+                        fill="#2F3136"
+                      />
+                    </svg>
+                  </i>
+                </a>
+              </li>
+              <li class="flex items-center gap-x-1 px-3 py-1 text-gray-1">
+                <a
+                  href="#"
+                  class="flex items-center gap-x-1 hover:text-primary group"
+                >
+                  پتو
+                  <i class="group-hover:**:fill-primary">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M2.95388 5.67461C3.13359 5.46495 3.44924 5.44067 3.6589 5.62038L8.00017 9.34147L12.3414 5.62038C12.5511 5.44067 12.8668 5.46495 13.0465 5.67461C13.2262 5.88428 13.2019 6.19993 12.9922 6.37964L8.32557 10.3796C8.13832 10.5401 7.86202 10.5401 7.67478 10.3796L3.00811 6.37964C2.79845 6.19993 2.77417 5.88428 2.95388 5.67461Z"
+                        fill="#2F3136"
+                      />
+                    </svg>
+                  </i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="flex items-center gap-x-4">
+            <!-- change popover-1 and --anchor-1 names. Use unique names for each dropdown -->
+            <button
+              popovertarget="popover-1"
+              style="anchor-name: --anchor-1"
+              class="btn btn-secondary btn-ghost btn-icon group dropdown"
+            >
+              <i class="group-hover:**:fill-white">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3.31573 13.7811L4.04591 13.6098L3.31573 13.7811ZM3.31573 8.324L4.04591 8.49528L3.31573 8.324ZM18.7893 8.324L19.5195 8.15273L18.7893 8.324ZM18.7893 13.781L19.5195 13.9523L18.7893 13.781ZM13.781 18.7893L13.6098 18.0591L13.781 18.7893ZM8.324 18.7893L8.15273 19.5195L8.324 18.7893ZM8.324 3.31573L8.15272 2.58555L8.324 3.31573ZM13.781 3.31573L13.9523 2.58555L13.781 3.31573ZM20.4697 21.5303C20.7626 21.8232 21.2374 21.8232 21.5303 21.5303C21.8232 21.2374 21.8232 20.7626 21.5303 20.4697L21 21L20.4697 21.5303ZM3.31573 13.7811L4.04591 13.6098C3.65136 11.9278 3.65136 10.1773 4.04591 8.49528L3.31573 8.324L2.58555 8.15272C2.13815 10.06 2.13815 12.045 2.58555 13.9523L3.31573 13.7811ZM18.7893 8.324L18.0591 8.49528C18.4537 10.1773 18.4537 11.9278 18.0591 13.6098L18.7893 13.781L19.5195 13.9523C19.9669 12.045 19.9669 10.06 19.5195 8.15273L18.7893 8.324ZM13.781 18.7893L13.6098 18.0591C11.9278 18.4537 10.1773 18.4537 8.49528 18.0591L8.324 18.7893L8.15273 19.5195C10.06 19.9669 12.045 19.9669 13.9523 19.5195L13.781 18.7893ZM8.324 3.31573L8.49528 4.04591C10.1773 3.65136 11.9278 3.65136 13.6098 4.04591L13.781 3.31573L13.9523 2.58555C12.045 2.13815 10.06 2.13815 8.15272 2.58555L8.324 3.31573ZM8.324 18.7893L8.49528 18.0591C6.28757 17.5413 4.56377 15.8175 4.04591 13.6098L3.31573 13.7811L2.58555 13.9523C3.23351 16.7147 5.39038 18.8715 8.15273 19.5195L8.324 18.7893ZM13.781 18.7893L13.9523 19.5195C16.7147 18.8715 18.8715 16.7147 19.5195 13.9523L18.7893 13.781L18.0591 13.6098C17.5413 15.8175 15.8175 17.5413 13.6098 18.0591L13.781 18.7893ZM13.781 3.31573L13.6098 4.04591C15.8175 4.56377 17.5413 6.28757 18.0591 8.49528L18.7893 8.324L19.5195 8.15273C18.8715 5.39037 16.7147 3.23351 13.9523 2.58555L13.781 3.31573ZM8.324 3.31573L8.15272 2.58555C5.39037 3.23351 3.23351 5.39037 2.58555 8.15272L3.31573 8.324L4.04591 8.49528C4.56377 6.28756 6.28757 4.56377 8.49528 4.04591L8.324 3.31573ZM17.3351 17.3351L16.8048 17.8655L20.4697 21.5303L21 21L21.5303 20.4697L17.8655 16.8048L17.3351 17.3351Z"
+                    fill="#FF9C00"
+                  />
+                </svg>
+              </i>
+            </button>
+
+            <div
+              class="dropdown menu w-[344px] p-4 rounded-b-2xl shadow-dropdown top-3 -left-[300px]! bg-white"
+              popover
+              id="popover-1"
+              style="position-anchor: --anchor-1"
+            >
+              <input
+                type="text"
+                placeholder="محصول مد نظر را جستجو کنید..."
+                class="w-full text-sm text-dark placeholder:text-gray-2 bg-gray-5 p-4 rounded-xs"
+              />
+
+              <div class="flex items-center justify-between mb-6">
+                <h3 class="font-medium text-dark">نتایج جستجو</h3>
+                <i>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="#209AFF"
+                      stroke-width="1.5"
+                    />
+                    <path
+                      d="M14.5 9.50002L9.5 14.5M9.49998 9.5L14.5 14.5"
+                      stroke="#209AFF"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </i>
+              </div>
+              <div class="space-y-4 mb-8">
+                <div>
+                  <div class="flex items-start">
+                    <figure class="min-w-24 min-h-24 p-4">
+                      <img src="./images/product-1.png" alt="" />
+                    </figure>
+                    <div class="mb-3">
+                      <div class="flex items-center gap-x-2.5 mb-6">
+                        <h4 class="text-2xs font-bold text-dark">
+                          تشک دو نفره انرژتیک هایپو طبی فنر منفصل سایز 200*140
+                          برند فالومو
+                        </h4>
+                        <div class="flex items-center gap-x-1.5">
+                          <figure class="min-w-5 min-h-5">
+                            <img src="./images/feature-1.png" alt="" />
+                          </figure>
+                          <figure class="min-w-5 min-h-5">
+                            <img src="./images/feature-2.png" alt="" />
+                          </figure>
+                        </div>
+                      </div>
+                      <ul
+                        class="grid grid-cols-2 w-full items-center gap-x-2 gap-y-3"
+                      >
+                        <li
+                          class="col-span-1 flex flex-row flex-nowrap items-center text-[8px] text-gray-2"
+                        >
+                          <i>
+                            <svg
+                              width="9"
+                              height="9"
+                              viewBox="0 0 9 9"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g clip-path="url(#clip0_439_21969)">
+                                <path
+                                  d="M6.53332 6.87806V6.36218M1.71851 6.87806V6.36218"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                  stroke-linecap="round"
+                                />
+                                <path
+                                  d="M0.686768 5.1587C0.686768 4.83821 0.686768 4.67797 0.739126 4.55156C0.808936 4.38302 0.942839 4.24912 1.11138 4.17931C1.23778 4.12695 1.39802 4.12695 1.71851 4.12695H6.53333C6.85382 4.12695 7.01406 4.12695 7.14047 4.17931C7.309 4.24912 7.44291 4.38302 7.51272 4.55156C7.56507 4.67797 7.56507 4.83821 7.56507 5.1587C7.56507 5.47919 7.56507 5.63943 7.51272 5.76584C7.44291 5.93437 7.309 6.06828 7.14047 6.13809C7.01406 6.19045 6.85382 6.19045 6.53333 6.19045H1.71851C1.39802 6.19045 1.23778 6.19045 1.11138 6.13809C0.942839 6.06828 0.808936 5.93437 0.739126 5.76584C0.686768 5.63943 0.686768 5.47919 0.686768 5.1587Z"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                />
+                                <path
+                                  d="M7.22221 4.12693C7.22221 2.82995 7.22221 2.18145 6.81929 1.77853C6.41637 1.37561 5.76788 1.37561 4.47089 1.37561H3.78306C2.48608 1.37561 1.83758 1.37561 1.43466 1.77853C1.03174 2.18145 1.03174 2.82995 1.03174 4.12693"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                />
+                                <path
+                                  d="M6.36348 4.12676V3.61089C6.36348 2.9624 6.36348 2.63815 6.16202 2.43669C5.96056 2.23523 5.63631 2.23523 4.98782 2.23523H3.26824C2.61975 2.23523 2.2955 2.23523 2.09404 2.43669C1.89258 2.63815 1.89258 2.9624 1.89258 3.61089V4.12676"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                />
+                                <path
+                                  d="M4.12695 2.40735V4.12693"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_439_21969">
+                                  <rect
+                                    width="8.25397"
+                                    height="8.25397"
+                                    fill="white"
+                                  />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </i>
+                          ️نوع تشک : طبی فنری
+                        </li>
+                        <li
+                          class="col-span-1 flex flex-row flex-nowrap items-center text-[8px] text-gray-2"
+                        >
+                          <i>
+                            <svg
+                              width="9"
+                              height="9"
+                              viewBox="0 0 9 9"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g clip-path="url(#clip0_439_21969)">
+                                <path
+                                  d="M6.53332 6.87806V6.36218M1.71851 6.87806V6.36218"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                  stroke-linecap="round"
+                                />
+                                <path
+                                  d="M0.686768 5.1587C0.686768 4.83821 0.686768 4.67797 0.739126 4.55156C0.808936 4.38302 0.942839 4.24912 1.11138 4.17931C1.23778 4.12695 1.39802 4.12695 1.71851 4.12695H6.53333C6.85382 4.12695 7.01406 4.12695 7.14047 4.17931C7.309 4.24912 7.44291 4.38302 7.51272 4.55156C7.56507 4.67797 7.56507 4.83821 7.56507 5.1587C7.56507 5.47919 7.56507 5.63943 7.51272 5.76584C7.44291 5.93437 7.309 6.06828 7.14047 6.13809C7.01406 6.19045 6.85382 6.19045 6.53333 6.19045H1.71851C1.39802 6.19045 1.23778 6.19045 1.11138 6.13809C0.942839 6.06828 0.808936 5.93437 0.739126 5.76584C0.686768 5.63943 0.686768 5.47919 0.686768 5.1587Z"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                />
+                                <path
+                                  d="M7.22221 4.12693C7.22221 2.82995 7.22221 2.18145 6.81929 1.77853C6.41637 1.37561 5.76788 1.37561 4.47089 1.37561H3.78306C2.48608 1.37561 1.83758 1.37561 1.43466 1.77853C1.03174 2.18145 1.03174 2.82995 1.03174 4.12693"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                />
+                                <path
+                                  d="M6.36348 4.12676V3.61089C6.36348 2.9624 6.36348 2.63815 6.16202 2.43669C5.96056 2.23523 5.63631 2.23523 4.98782 2.23523H3.26824C2.61975 2.23523 2.2955 2.23523 2.09404 2.43669C1.89258 2.63815 1.89258 2.9624 1.89258 3.61089V4.12676"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                />
+                                <path
+                                  d="M4.12695 2.40735V4.12693"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_439_21969">
+                                  <rect
+                                    width="8.25397"
+                                    height="8.25397"
+                                    fill="white"
+                                  />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </i>
+                          ️نوع تشک : طبی فنری
+                        </li>
+                        <li
+                          class="col-span-1 flex flex-row flex-nowrap items-center text-[8px] text-gray-2"
+                        >
+                          <i>
+                            <svg
+                              width="9"
+                              height="9"
+                              viewBox="0 0 9 9"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g clip-path="url(#clip0_439_21969)">
+                                <path
+                                  d="M6.53332 6.87806V6.36218M1.71851 6.87806V6.36218"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                  stroke-linecap="round"
+                                />
+                                <path
+                                  d="M0.686768 5.1587C0.686768 4.83821 0.686768 4.67797 0.739126 4.55156C0.808936 4.38302 0.942839 4.24912 1.11138 4.17931C1.23778 4.12695 1.39802 4.12695 1.71851 4.12695H6.53333C6.85382 4.12695 7.01406 4.12695 7.14047 4.17931C7.309 4.24912 7.44291 4.38302 7.51272 4.55156C7.56507 4.67797 7.56507 4.83821 7.56507 5.1587C7.56507 5.47919 7.56507 5.63943 7.51272 5.76584C7.44291 5.93437 7.309 6.06828 7.14047 6.13809C7.01406 6.19045 6.85382 6.19045 6.53333 6.19045H1.71851C1.39802 6.19045 1.23778 6.19045 1.11138 6.13809C0.942839 6.06828 0.808936 5.93437 0.739126 5.76584C0.686768 5.63943 0.686768 5.47919 0.686768 5.1587Z"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                />
+                                <path
+                                  d="M7.22221 4.12693C7.22221 2.82995 7.22221 2.18145 6.81929 1.77853C6.41637 1.37561 5.76788 1.37561 4.47089 1.37561H3.78306C2.48608 1.37561 1.83758 1.37561 1.43466 1.77853C1.03174 2.18145 1.03174 2.82995 1.03174 4.12693"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                />
+                                <path
+                                  d="M6.36348 4.12676V3.61089C6.36348 2.9624 6.36348 2.63815 6.16202 2.43669C5.96056 2.23523 5.63631 2.23523 4.98782 2.23523H3.26824C2.61975 2.23523 2.2955 2.23523 2.09404 2.43669C1.89258 2.63815 1.89258 2.9624 1.89258 3.61089V4.12676"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                />
+                                <path
+                                  d="M4.12695 2.40735V4.12693"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_439_21969">
+                                  <rect
+                                    width="8.25397"
+                                    height="8.25397"
+                                    fill="white"
+                                  />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </i>
+                          ️نوع تشک : طبی فنری
+                        </li>
+                        <li
+                          class="col-span-1 flex flex-row flex-nowrap items-center text-[8px] text-gray-2"
+                        >
+                          <i>
+                            <svg
+                              width="9"
+                              height="9"
+                              viewBox="0 0 9 9"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g clip-path="url(#clip0_439_21969)">
+                                <path
+                                  d="M6.53332 6.87806V6.36218M1.71851 6.87806V6.36218"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                  stroke-linecap="round"
+                                />
+                                <path
+                                  d="M0.686768 5.1587C0.686768 4.83821 0.686768 4.67797 0.739126 4.55156C0.808936 4.38302 0.942839 4.24912 1.11138 4.17931C1.23778 4.12695 1.39802 4.12695 1.71851 4.12695H6.53333C6.85382 4.12695 7.01406 4.12695 7.14047 4.17931C7.309 4.24912 7.44291 4.38302 7.51272 4.55156C7.56507 4.67797 7.56507 4.83821 7.56507 5.1587C7.56507 5.47919 7.56507 5.63943 7.51272 5.76584C7.44291 5.93437 7.309 6.06828 7.14047 6.13809C7.01406 6.19045 6.85382 6.19045 6.53333 6.19045H1.71851C1.39802 6.19045 1.23778 6.19045 1.11138 6.13809C0.942839 6.06828 0.808936 5.93437 0.739126 5.76584C0.686768 5.63943 0.686768 5.47919 0.686768 5.1587Z"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                />
+                                <path
+                                  d="M7.22221 4.12693C7.22221 2.82995 7.22221 2.18145 6.81929 1.77853C6.41637 1.37561 5.76788 1.37561 4.47089 1.37561H3.78306C2.48608 1.37561 1.83758 1.37561 1.43466 1.77853C1.03174 2.18145 1.03174 2.82995 1.03174 4.12693"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                />
+                                <path
+                                  d="M6.36348 4.12676V3.61089C6.36348 2.9624 6.36348 2.63815 6.16202 2.43669C5.96056 2.23523 5.63631 2.23523 4.98782 2.23523H3.26824C2.61975 2.23523 2.2955 2.23523 2.09404 2.43669C1.89258 2.63815 1.89258 2.9624 1.89258 3.61089V4.12676"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                />
+                                <path
+                                  d="M4.12695 2.40735V4.12693"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_439_21969">
+                                  <rect
+                                    width="8.25397"
+                                    height="8.25397"
+                                    fill="white"
+                                  />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </i>
+                          ️نوع تشک : طبی فنری
+                        </li>
+                        <li
+                          class="col-span-1 flex flex-row flex-nowrap items-center text-[8px] text-gray-2"
+                        >
+                          <i>
+                            <svg
+                              width="9"
+                              height="9"
+                              viewBox="0 0 9 9"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g clip-path="url(#clip0_439_21969)">
+                                <path
+                                  d="M6.53332 6.87806V6.36218M1.71851 6.87806V6.36218"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                  stroke-linecap="round"
+                                />
+                                <path
+                                  d="M0.686768 5.1587C0.686768 4.83821 0.686768 4.67797 0.739126 4.55156C0.808936 4.38302 0.942839 4.24912 1.11138 4.17931C1.23778 4.12695 1.39802 4.12695 1.71851 4.12695H6.53333C6.85382 4.12695 7.01406 4.12695 7.14047 4.17931C7.309 4.24912 7.44291 4.38302 7.51272 4.55156C7.56507 4.67797 7.56507 4.83821 7.56507 5.1587C7.56507 5.47919 7.56507 5.63943 7.51272 5.76584C7.44291 5.93437 7.309 6.06828 7.14047 6.13809C7.01406 6.19045 6.85382 6.19045 6.53333 6.19045H1.71851C1.39802 6.19045 1.23778 6.19045 1.11138 6.13809C0.942839 6.06828 0.808936 5.93437 0.739126 5.76584C0.686768 5.63943 0.686768 5.47919 0.686768 5.1587Z"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                />
+                                <path
+                                  d="M7.22221 4.12693C7.22221 2.82995 7.22221 2.18145 6.81929 1.77853C6.41637 1.37561 5.76788 1.37561 4.47089 1.37561H3.78306C2.48608 1.37561 1.83758 1.37561 1.43466 1.77853C1.03174 2.18145 1.03174 2.82995 1.03174 4.12693"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                />
+                                <path
+                                  d="M6.36348 4.12676V3.61089C6.36348 2.9624 6.36348 2.63815 6.16202 2.43669C5.96056 2.23523 5.63631 2.23523 4.98782 2.23523H3.26824C2.61975 2.23523 2.2955 2.23523 2.09404 2.43669C1.89258 2.63815 1.89258 2.9624 1.89258 3.61089V4.12676"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                />
+                                <path
+                                  d="M4.12695 2.40735V4.12693"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_439_21969">
+                                  <rect
+                                    width="8.25397"
+                                    height="8.25397"
+                                    fill="white"
+                                  />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </i>
+                          ️نوع تشک : طبی فنری
+                        </li>
+                        <li
+                          class="col-span-1 flex flex-row flex-nowrap items-center text-[8px] text-gray-2"
+                        >
+                          <i>
+                            <svg
+                              width="9"
+                              height="9"
+                              viewBox="0 0 9 9"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g clip-path="url(#clip0_439_21969)">
+                                <path
+                                  d="M6.53332 6.87806V6.36218M1.71851 6.87806V6.36218"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                  stroke-linecap="round"
+                                />
+                                <path
+                                  d="M0.686768 5.1587C0.686768 4.83821 0.686768 4.67797 0.739126 4.55156C0.808936 4.38302 0.942839 4.24912 1.11138 4.17931C1.23778 4.12695 1.39802 4.12695 1.71851 4.12695H6.53333C6.85382 4.12695 7.01406 4.12695 7.14047 4.17931C7.309 4.24912 7.44291 4.38302 7.51272 4.55156C7.56507 4.67797 7.56507 4.83821 7.56507 5.1587C7.56507 5.47919 7.56507 5.63943 7.51272 5.76584C7.44291 5.93437 7.309 6.06828 7.14047 6.13809C7.01406 6.19045 6.85382 6.19045 6.53333 6.19045H1.71851C1.39802 6.19045 1.23778 6.19045 1.11138 6.13809C0.942839 6.06828 0.808936 5.93437 0.739126 5.76584C0.686768 5.63943 0.686768 5.47919 0.686768 5.1587Z"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                />
+                                <path
+                                  d="M7.22221 4.12693C7.22221 2.82995 7.22221 2.18145 6.81929 1.77853C6.41637 1.37561 5.76788 1.37561 4.47089 1.37561H3.78306C2.48608 1.37561 1.83758 1.37561 1.43466 1.77853C1.03174 2.18145 1.03174 2.82995 1.03174 4.12693"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                />
+                                <path
+                                  d="M6.36348 4.12676V3.61089C6.36348 2.9624 6.36348 2.63815 6.16202 2.43669C5.96056 2.23523 5.63631 2.23523 4.98782 2.23523H3.26824C2.61975 2.23523 2.2955 2.23523 2.09404 2.43669C1.89258 2.63815 1.89258 2.9624 1.89258 3.61089V4.12676"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                />
+                                <path
+                                  d="M4.12695 2.40735V4.12693"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_439_21969">
+                                  <rect
+                                    width="8.25397"
+                                    height="8.25397"
+                                    fill="white"
+                                  />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </i>
+                          ️نوع تشک : طبی فنری
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <div class="flex flex-col gay-y-3.5">
+                      <del class="text-2xs text-gray-2">50,110,000</del>
+                      <p>
+                        <span class="text-sm font-bold text-dark"
+                          >50,110,000</span
+                        >
+                        <span class="text-xs font-bold text-dark">تومان</span>
+                      </p>
+                    </div>
+                    <a
+                      href="#"
+                      class="flex items-center text-2xs font-semibold px-3.5 py-2 rounded-sm bg-primary-semilight"
+                    >
+                      جزییات و خرید محصول
+                    </a>
+                  </div>
+                </div>
+                <div>
+                  <div class="flex items-start">
+                    <figure class="min-w-24 min-h-24 p-4">
+                      <img src="./images/product-1.png" alt="" />
+                    </figure>
+                    <div class="mb-3">
+                      <div class="flex items-center gap-x-2.5 mb-6">
+                        <h4 class="text-2xs font-bold text-dark">
+                          تشک دو نفره انرژتیک هایپو طبی فنر منفصل سایز 200*140
+                          برند فالومو
+                        </h4>
+                        <div class="flex items-center gap-x-1.5">
+                          <figure class="min-w-5 min-h-5">
+                            <img src="./images/feature-1.png" alt="" />
+                          </figure>
+                          <figure class="min-w-5 min-h-5">
+                            <img src="./images/feature-2.png" alt="" />
+                          </figure>
+                        </div>
+                      </div>
+                      <ul
+                        class="grid grid-cols-2 w-full items-center gap-x-2 gap-y-3"
+                      >
+                        <li
+                          class="col-span-1 flex flex-row flex-nowrap items-center text-[8px] text-gray-2"
+                        >
+                          <i>
+                            <svg
+                              width="9"
+                              height="9"
+                              viewBox="0 0 9 9"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g clip-path="url(#clip0_439_21969)">
+                                <path
+                                  d="M6.53332 6.87806V6.36218M1.71851 6.87806V6.36218"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                  stroke-linecap="round"
+                                />
+                                <path
+                                  d="M0.686768 5.1587C0.686768 4.83821 0.686768 4.67797 0.739126 4.55156C0.808936 4.38302 0.942839 4.24912 1.11138 4.17931C1.23778 4.12695 1.39802 4.12695 1.71851 4.12695H6.53333C6.85382 4.12695 7.01406 4.12695 7.14047 4.17931C7.309 4.24912 7.44291 4.38302 7.51272 4.55156C7.56507 4.67797 7.56507 4.83821 7.56507 5.1587C7.56507 5.47919 7.56507 5.63943 7.51272 5.76584C7.44291 5.93437 7.309 6.06828 7.14047 6.13809C7.01406 6.19045 6.85382 6.19045 6.53333 6.19045H1.71851C1.39802 6.19045 1.23778 6.19045 1.11138 6.13809C0.942839 6.06828 0.808936 5.93437 0.739126 5.76584C0.686768 5.63943 0.686768 5.47919 0.686768 5.1587Z"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                />
+                                <path
+                                  d="M7.22221 4.12693C7.22221 2.82995 7.22221 2.18145 6.81929 1.77853C6.41637 1.37561 5.76788 1.37561 4.47089 1.37561H3.78306C2.48608 1.37561 1.83758 1.37561 1.43466 1.77853C1.03174 2.18145 1.03174 2.82995 1.03174 4.12693"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                />
+                                <path
+                                  d="M6.36348 4.12676V3.61089C6.36348 2.9624 6.36348 2.63815 6.16202 2.43669C5.96056 2.23523 5.63631 2.23523 4.98782 2.23523H3.26824C2.61975 2.23523 2.2955 2.23523 2.09404 2.43669C1.89258 2.63815 1.89258 2.9624 1.89258 3.61089V4.12676"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                />
+                                <path
+                                  d="M4.12695 2.40735V4.12693"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_439_21969">
+                                  <rect
+                                    width="8.25397"
+                                    height="8.25397"
+                                    fill="white"
+                                  />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </i>
+                          ️نوع تشک : طبی فنری
+                        </li>
+                        <li
+                          class="col-span-1 flex flex-row flex-nowrap items-center text-[8px] text-gray-2"
+                        >
+                          <i>
+                            <svg
+                              width="9"
+                              height="9"
+                              viewBox="0 0 9 9"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g clip-path="url(#clip0_439_21969)">
+                                <path
+                                  d="M6.53332 6.87806V6.36218M1.71851 6.87806V6.36218"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                  stroke-linecap="round"
+                                />
+                                <path
+                                  d="M0.686768 5.1587C0.686768 4.83821 0.686768 4.67797 0.739126 4.55156C0.808936 4.38302 0.942839 4.24912 1.11138 4.17931C1.23778 4.12695 1.39802 4.12695 1.71851 4.12695H6.53333C6.85382 4.12695 7.01406 4.12695 7.14047 4.17931C7.309 4.24912 7.44291 4.38302 7.51272 4.55156C7.56507 4.67797 7.56507 4.83821 7.56507 5.1587C7.56507 5.47919 7.56507 5.63943 7.51272 5.76584C7.44291 5.93437 7.309 6.06828 7.14047 6.13809C7.01406 6.19045 6.85382 6.19045 6.53333 6.19045H1.71851C1.39802 6.19045 1.23778 6.19045 1.11138 6.13809C0.942839 6.06828 0.808936 5.93437 0.739126 5.76584C0.686768 5.63943 0.686768 5.47919 0.686768 5.1587Z"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                />
+                                <path
+                                  d="M7.22221 4.12693C7.22221 2.82995 7.22221 2.18145 6.81929 1.77853C6.41637 1.37561 5.76788 1.37561 4.47089 1.37561H3.78306C2.48608 1.37561 1.83758 1.37561 1.43466 1.77853C1.03174 2.18145 1.03174 2.82995 1.03174 4.12693"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                />
+                                <path
+                                  d="M6.36348 4.12676V3.61089C6.36348 2.9624 6.36348 2.63815 6.16202 2.43669C5.96056 2.23523 5.63631 2.23523 4.98782 2.23523H3.26824C2.61975 2.23523 2.2955 2.23523 2.09404 2.43669C1.89258 2.63815 1.89258 2.9624 1.89258 3.61089V4.12676"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                />
+                                <path
+                                  d="M4.12695 2.40735V4.12693"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_439_21969">
+                                  <rect
+                                    width="8.25397"
+                                    height="8.25397"
+                                    fill="white"
+                                  />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </i>
+                          ️نوع تشک : طبی فنری
+                        </li>
+                        <li
+                          class="col-span-1 flex flex-row flex-nowrap items-center text-[8px] text-gray-2"
+                        >
+                          <i>
+                            <svg
+                              width="9"
+                              height="9"
+                              viewBox="0 0 9 9"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g clip-path="url(#clip0_439_21969)">
+                                <path
+                                  d="M6.53332 6.87806V6.36218M1.71851 6.87806V6.36218"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                  stroke-linecap="round"
+                                />
+                                <path
+                                  d="M0.686768 5.1587C0.686768 4.83821 0.686768 4.67797 0.739126 4.55156C0.808936 4.38302 0.942839 4.24912 1.11138 4.17931C1.23778 4.12695 1.39802 4.12695 1.71851 4.12695H6.53333C6.85382 4.12695 7.01406 4.12695 7.14047 4.17931C7.309 4.24912 7.44291 4.38302 7.51272 4.55156C7.56507 4.67797 7.56507 4.83821 7.56507 5.1587C7.56507 5.47919 7.56507 5.63943 7.51272 5.76584C7.44291 5.93437 7.309 6.06828 7.14047 6.13809C7.01406 6.19045 6.85382 6.19045 6.53333 6.19045H1.71851C1.39802 6.19045 1.23778 6.19045 1.11138 6.13809C0.942839 6.06828 0.808936 5.93437 0.739126 5.76584C0.686768 5.63943 0.686768 5.47919 0.686768 5.1587Z"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                />
+                                <path
+                                  d="M7.22221 4.12693C7.22221 2.82995 7.22221 2.18145 6.81929 1.77853C6.41637 1.37561 5.76788 1.37561 4.47089 1.37561H3.78306C2.48608 1.37561 1.83758 1.37561 1.43466 1.77853C1.03174 2.18145 1.03174 2.82995 1.03174 4.12693"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                />
+                                <path
+                                  d="M6.36348 4.12676V3.61089C6.36348 2.9624 6.36348 2.63815 6.16202 2.43669C5.96056 2.23523 5.63631 2.23523 4.98782 2.23523H3.26824C2.61975 2.23523 2.2955 2.23523 2.09404 2.43669C1.89258 2.63815 1.89258 2.9624 1.89258 3.61089V4.12676"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                />
+                                <path
+                                  d="M4.12695 2.40735V4.12693"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_439_21969">
+                                  <rect
+                                    width="8.25397"
+                                    height="8.25397"
+                                    fill="white"
+                                  />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </i>
+                          ️نوع تشک : طبی فنری
+                        </li>
+                        <li
+                          class="col-span-1 flex flex-row flex-nowrap items-center text-[8px] text-gray-2"
+                        >
+                          <i>
+                            <svg
+                              width="9"
+                              height="9"
+                              viewBox="0 0 9 9"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g clip-path="url(#clip0_439_21969)">
+                                <path
+                                  d="M6.53332 6.87806V6.36218M1.71851 6.87806V6.36218"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                  stroke-linecap="round"
+                                />
+                                <path
+                                  d="M0.686768 5.1587C0.686768 4.83821 0.686768 4.67797 0.739126 4.55156C0.808936 4.38302 0.942839 4.24912 1.11138 4.17931C1.23778 4.12695 1.39802 4.12695 1.71851 4.12695H6.53333C6.85382 4.12695 7.01406 4.12695 7.14047 4.17931C7.309 4.24912 7.44291 4.38302 7.51272 4.55156C7.56507 4.67797 7.56507 4.83821 7.56507 5.1587C7.56507 5.47919 7.56507 5.63943 7.51272 5.76584C7.44291 5.93437 7.309 6.06828 7.14047 6.13809C7.01406 6.19045 6.85382 6.19045 6.53333 6.19045H1.71851C1.39802 6.19045 1.23778 6.19045 1.11138 6.13809C0.942839 6.06828 0.808936 5.93437 0.739126 5.76584C0.686768 5.63943 0.686768 5.47919 0.686768 5.1587Z"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                />
+                                <path
+                                  d="M7.22221 4.12693C7.22221 2.82995 7.22221 2.18145 6.81929 1.77853C6.41637 1.37561 5.76788 1.37561 4.47089 1.37561H3.78306C2.48608 1.37561 1.83758 1.37561 1.43466 1.77853C1.03174 2.18145 1.03174 2.82995 1.03174 4.12693"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                />
+                                <path
+                                  d="M6.36348 4.12676V3.61089C6.36348 2.9624 6.36348 2.63815 6.16202 2.43669C5.96056 2.23523 5.63631 2.23523 4.98782 2.23523H3.26824C2.61975 2.23523 2.2955 2.23523 2.09404 2.43669C1.89258 2.63815 1.89258 2.9624 1.89258 3.61089V4.12676"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                />
+                                <path
+                                  d="M4.12695 2.40735V4.12693"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_439_21969">
+                                  <rect
+                                    width="8.25397"
+                                    height="8.25397"
+                                    fill="white"
+                                  />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </i>
+                          ️نوع تشک : طبی فنری
+                        </li>
+                        <li
+                          class="col-span-1 flex flex-row flex-nowrap items-center text-[8px] text-gray-2"
+                        >
+                          <i>
+                            <svg
+                              width="9"
+                              height="9"
+                              viewBox="0 0 9 9"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g clip-path="url(#clip0_439_21969)">
+                                <path
+                                  d="M6.53332 6.87806V6.36218M1.71851 6.87806V6.36218"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                  stroke-linecap="round"
+                                />
+                                <path
+                                  d="M0.686768 5.1587C0.686768 4.83821 0.686768 4.67797 0.739126 4.55156C0.808936 4.38302 0.942839 4.24912 1.11138 4.17931C1.23778 4.12695 1.39802 4.12695 1.71851 4.12695H6.53333C6.85382 4.12695 7.01406 4.12695 7.14047 4.17931C7.309 4.24912 7.44291 4.38302 7.51272 4.55156C7.56507 4.67797 7.56507 4.83821 7.56507 5.1587C7.56507 5.47919 7.56507 5.63943 7.51272 5.76584C7.44291 5.93437 7.309 6.06828 7.14047 6.13809C7.01406 6.19045 6.85382 6.19045 6.53333 6.19045H1.71851C1.39802 6.19045 1.23778 6.19045 1.11138 6.13809C0.942839 6.06828 0.808936 5.93437 0.739126 5.76584C0.686768 5.63943 0.686768 5.47919 0.686768 5.1587Z"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                />
+                                <path
+                                  d="M7.22221 4.12693C7.22221 2.82995 7.22221 2.18145 6.81929 1.77853C6.41637 1.37561 5.76788 1.37561 4.47089 1.37561H3.78306C2.48608 1.37561 1.83758 1.37561 1.43466 1.77853C1.03174 2.18145 1.03174 2.82995 1.03174 4.12693"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                />
+                                <path
+                                  d="M6.36348 4.12676V3.61089C6.36348 2.9624 6.36348 2.63815 6.16202 2.43669C5.96056 2.23523 5.63631 2.23523 4.98782 2.23523H3.26824C2.61975 2.23523 2.2955 2.23523 2.09404 2.43669C1.89258 2.63815 1.89258 2.9624 1.89258 3.61089V4.12676"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                />
+                                <path
+                                  d="M4.12695 2.40735V4.12693"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_439_21969">
+                                  <rect
+                                    width="8.25397"
+                                    height="8.25397"
+                                    fill="white"
+                                  />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </i>
+                          ️نوع تشک : طبی فنری
+                        </li>
+                        <li
+                          class="col-span-1 flex flex-row flex-nowrap items-center text-[8px] text-gray-2"
+                        >
+                          <i>
+                            <svg
+                              width="9"
+                              height="9"
+                              viewBox="0 0 9 9"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g clip-path="url(#clip0_439_21969)">
+                                <path
+                                  d="M6.53332 6.87806V6.36218M1.71851 6.87806V6.36218"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                  stroke-linecap="round"
+                                />
+                                <path
+                                  d="M0.686768 5.1587C0.686768 4.83821 0.686768 4.67797 0.739126 4.55156C0.808936 4.38302 0.942839 4.24912 1.11138 4.17931C1.23778 4.12695 1.39802 4.12695 1.71851 4.12695H6.53333C6.85382 4.12695 7.01406 4.12695 7.14047 4.17931C7.309 4.24912 7.44291 4.38302 7.51272 4.55156C7.56507 4.67797 7.56507 4.83821 7.56507 5.1587C7.56507 5.47919 7.56507 5.63943 7.51272 5.76584C7.44291 5.93437 7.309 6.06828 7.14047 6.13809C7.01406 6.19045 6.85382 6.19045 6.53333 6.19045H1.71851C1.39802 6.19045 1.23778 6.19045 1.11138 6.13809C0.942839 6.06828 0.808936 5.93437 0.739126 5.76584C0.686768 5.63943 0.686768 5.47919 0.686768 5.1587Z"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                />
+                                <path
+                                  d="M7.22221 4.12693C7.22221 2.82995 7.22221 2.18145 6.81929 1.77853C6.41637 1.37561 5.76788 1.37561 4.47089 1.37561H3.78306C2.48608 1.37561 1.83758 1.37561 1.43466 1.77853C1.03174 2.18145 1.03174 2.82995 1.03174 4.12693"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                />
+                                <path
+                                  d="M6.36348 4.12676V3.61089C6.36348 2.9624 6.36348 2.63815 6.16202 2.43669C5.96056 2.23523 5.63631 2.23523 4.98782 2.23523H3.26824C2.61975 2.23523 2.2955 2.23523 2.09404 2.43669C1.89258 2.63815 1.89258 2.9624 1.89258 3.61089V4.12676"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                />
+                                <path
+                                  d="M4.12695 2.40735V4.12693"
+                                  stroke="#808184"
+                                  stroke-width="0.825397"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_439_21969">
+                                  <rect
+                                    width="8.25397"
+                                    height="8.25397"
+                                    fill="white"
+                                  />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </i>
+                          ️نوع تشک : طبی فنری
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <div class="flex flex-col gay-y-3.5">
+                      <del class="text-2xs text-gray-2">50,110,000</del>
+                      <p>
+                        <span class="text-sm font-bold text-dark"
+                          >50,110,000</span
+                        >
+                        <span class="text-xs font-bold text-dark">تومان</span>
+                      </p>
+                    </div>
+                    <a
+                      href="#"
+                      class="flex items-center text-2xs font-semibold px-3.5 py-2 rounded-sm bg-primary-semilight"
+                    >
+                      جزییات و خرید محصول
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="btn btn-primary w-full">نمایش بیشتر</a>
+            </div>
+
+            <!--  -->
+
+            <a href="#" class="btn btn-secondary btn-ghost group">
+              <i class="group-hover:**:fill-white">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_416_19575)">
+                    <path
+                      d="M6.9694 11.9697C6.67651 12.2626 6.67651 12.7375 6.9694 13.0304C7.26229 13.3233 7.73717 13.3233 8.03006 13.0304L7.49973 12.5001L6.9694 11.9697ZM12.7441 8.31634C13.037 8.02344 13.037 7.54857 12.7441 7.25568C12.4512 6.96278 11.9763 6.96278 11.6834 7.25568L12.2138 7.78601L12.7441 8.31634ZM4.66208 4.18254L4.47972 4.91003L4.66208 4.18254ZM7.63044 2.46875L8.35164 2.67457L7.63044 2.46875ZM2.29279 8.28627L1.75394 8.80794L2.29279 8.28627ZM2.29279 11.7138L1.75394 11.1922L2.29279 11.7138ZM4.66208 15.8176L4.47972 15.0901L4.66208 15.8176ZM7.63044 17.5313L8.35164 17.3255L7.63044 17.5313ZM12.369 17.5313L11.6478 17.3255L12.369 17.5313ZM15.3374 15.8176L15.5197 15.0901L15.3374 15.8176ZM17.7067 11.7138L18.2455 11.1922L17.7067 11.7138ZM17.7067 8.28627L18.2455 8.80794L17.7067 8.28627ZM15.3374 4.18254L15.5197 4.91003L15.3374 4.18254ZM12.369 2.46875L11.6478 2.67457L12.369 2.46875ZM7.49973 12.5001L8.03006 13.0304L12.7441 8.31634L12.2138 7.78601L11.6834 7.25568L6.9694 11.9697L7.49973 12.5001ZM4.66208 4.18254L4.47972 4.91003C6.16213 5.33174 7.87566 4.34244 8.35164 2.67457L7.63044 2.46875L6.90923 2.26293C6.6554 3.15236 5.74162 3.67993 4.84443 3.45504L4.66208 4.18254ZM2.29279 8.28627L2.83164 7.7646C1.63231 6.52577 2.80721 4.49079 4.47972 4.91003L4.66208 4.18254L4.84443 3.45504C1.70813 2.66889 -0.495045 6.48489 1.75394 8.80794L2.29279 8.28627ZM2.29279 11.7138L2.83164 12.2355C4.03806 10.9894 4.03806 9.01075 2.83164 7.7646L2.29279 8.28627L1.75394 8.80794C2.39729 9.47248 2.39729 10.5276 1.75394 11.1922L2.29279 11.7138ZM4.66208 15.8176L4.47972 15.0901C2.80721 15.5093 1.63231 13.4743 2.83164 12.2355L2.29279 11.7138L1.75394 11.1922C-0.495046 13.5152 1.70813 17.3312 4.84443 16.5451L4.66208 15.8176ZM7.63044 17.5313L8.35164 17.3255C7.87566 15.6577 6.16213 14.6684 4.47972 15.0901L4.66208 15.8176L4.84443 16.5451C5.74162 16.3202 6.6554 16.8477 6.90923 17.7372L7.63044 17.5313ZM12.369 17.5313L11.6478 17.3255C11.1746 18.9836 8.82483 18.9836 8.35164 17.3255L7.63044 17.5313L6.90923 17.7372C7.79656 20.8464 12.2029 20.8464 13.0902 17.7372L12.369 17.5313ZM15.3374 15.8176L15.5197 15.0901C13.8373 14.6684 12.1238 15.6577 11.6478 17.3255L12.369 17.5313L13.0902 17.7372C13.3441 16.8477 14.2578 16.3202 15.155 16.5451L15.3374 15.8176ZM17.7067 11.7138L17.1678 12.2355C18.3671 13.4743 17.1922 15.5093 15.5197 15.0901L15.3374 15.8176L15.155 16.5451C18.2913 17.3312 20.4945 13.5152 18.2455 11.1922L17.7067 11.7138ZM17.7067 8.28627L17.1678 7.7646C15.9614 9.01075 15.9614 10.9894 17.1678 12.2355L17.7067 11.7138L18.2455 11.1922C17.6022 10.5276 17.6022 9.47248 18.2455 8.80794L17.7067 8.28627ZM15.3374 4.18254L15.5197 4.91003C17.1923 4.49079 18.3671 6.52577 17.1678 7.7646L17.7067 8.28627L18.2455 8.80794C20.4945 6.48489 18.2913 2.66889 15.155 3.45504L15.3374 4.18254ZM12.369 2.46875L11.6478 2.67457C12.1238 4.34244 13.8373 5.33175 15.5197 4.91003L15.3374 4.18254L15.155 3.45504C14.2578 3.67993 13.3441 3.15236 13.0902 2.26293L12.369 2.46875ZM12.369 2.46875L13.0902 2.26293C12.2029 -0.846269 7.79656 -0.846269 6.90923 2.26293L7.63044 2.46875L8.35164 2.67457C8.82483 1.01652 11.1746 1.01652 11.6478 2.67457L12.369 2.46875Z"
+                      fill="#FF9C00"
+                    />
+                    <path
+                      d="M6.6665 7.50008C6.6665 7.96032 7.0396 8.33341 7.49984 8.33341C7.96007 8.33341 8.33317 7.96032 8.33317 7.50008C8.33317 7.03984 7.96007 6.66675 7.49984 6.66675C7.0396 6.66675 6.6665 7.03984 6.6665 7.50008Z"
+                      fill="#FF9C00"
+                    />
+                    <path
+                      d="M11.6665 12.5001C11.6665 12.9603 12.0396 13.3334 12.4998 13.3334C12.9601 13.3334 13.3332 12.9603 13.3332 12.5001C13.3332 12.0398 12.9601 11.6667 12.4998 11.6667C12.0396 11.6667 11.6665 12.0398 11.6665 12.5001Z"
+                      fill="#FF9C00"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_416_19575">
+                      <rect width="20" height="20" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </i>
+              تخفیف ویژه
+            </a>
+            <a href="#" class="btn btn-secondary btn-ghost group">
+              <i class="group-hover:**:stroke-white">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.5 14.1667V10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10V14.1667"
+                    stroke="#FF9C00"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M18.333 12.9167V14.5834"
+                    stroke="#FF9C00"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M1.66699 12.9167V14.5834"
+                    stroke="#FF9C00"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M6.66667 11.5372C6.66667 10.9002 6.66667 10.5817 6.52105 10.3602C6.44778 10.2488 6.35051 10.1567 6.237 10.0913C6.01143 9.96127 5.70677 9.99131 5.09745 10.0514C4.07073 10.1526 3.55736 10.2032 3.18948 10.4804C3.00329 10.6206 2.84698 10.7994 2.73038 11.0056C2.5 11.4129 2.5 11.9496 2.5 13.023V14.3277C2.5 15.3904 2.5 15.9218 2.73498 16.3321C2.82293 16.4857 2.93317 16.6242 3.0618 16.7428C3.40544 17.0595 3.90703 17.1584 4.91023 17.3562C5.6162 17.4954 5.96918 17.565 6.2297 17.4184C6.32583 17.3643 6.4108 17.2911 6.47977 17.2028C6.66667 16.9637 6.66667 16.5898 6.66667 15.842V11.5372Z"
+                    stroke="#FF9C00"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M13.333 11.5372C13.333 10.9002 13.333 10.5817 13.4786 10.3602C13.5519 10.2488 13.6492 10.1567 13.7627 10.0913C13.9882 9.96127 14.2929 9.99131 14.9022 10.0514C15.9289 10.1526 16.4423 10.2032 16.8102 10.4804C16.9964 10.6206 17.1527 10.7994 17.2693 11.0056C17.4997 11.4129 17.4997 11.9496 17.4997 13.023V14.3277C17.4997 15.3904 17.4997 15.9218 17.2647 16.3321C17.1767 16.4857 17.0665 16.6242 16.9379 16.7428C16.5942 17.0595 16.0926 17.1584 15.0894 17.3562C14.3835 17.4954 14.0305 17.565 13.77 17.4184C13.6738 17.3643 13.5889 17.2911 13.5199 17.2028C13.333 16.9637 13.333 16.5898 13.333 15.842V11.5372Z"
+                    stroke="#FF9C00"
+                    stroke-width="1.5"
+                  />
+                </svg>
+              </i>
+              مشاوره رایگان
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- <div class="container header">
+      <div class="bg-white p-4 w-[234px] dropdown-menu">
+        <ul class="flex flex-col gap-y-4">
+          <li>
+            <details class="group w-full cursor-pointer">
+              <summary
+                class="flex items-center justify-between py-3 text-base font-medium list-none"
+              >
+                بر اساس برند
+                <svg
+                  class="w-5 h-5 transition-transform duration-200 group-open:rotate-180"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M4.43 8.51c.27-.31.74-.35 1.06-.08L12 14.01l6.51-5.58c.32-.27.79-.23 1.06.08s.23.79-.08 1.06l-7 6c-.28.24-.69.24-.98 0l-7-6a.74.74 0 01-.08-1.06z"
+                    fill="#030303"
+                  />
+                </svg>
+              </summary>
+
+              <ul class="flex flex-col gap-y-3 pr-8 mt-2">
+                <li class="text-sm font-normal text-gray-600 list-disc">
+                  <a href="#">آیتم یک</a>
+                </li>
+                <li class="text-sm font-normal text-gray-600 list-disc">
+                  <a href="#">آیتم دو</a>
+                </li>
+                <li class="text-sm font-normal text-gray-600 list-disc">
+                  <a href="#">آیتم سه</a>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <button href="#">
+              بر اساس ظرفیت
+              <i>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M4.43057 8.51192C4.70014 8.19743 5.17361 8.161 5.48811 8.43057L12 14.0122L18.5119 8.43057C18.8264 8.16101 19.2999 8.19743 19.5695 8.51192C19.839 8.82642 19.8026 9.29989 19.4881 9.56946L12.4881 15.5695C12.2072 15.8102 11.7928 15.8102 11.5119 15.5695L4.51192 9.56946C4.19743 9.29989 4.161 8.82641 4.43057 8.51192Z"
+                    fill="#030303"
+                  />
+                </svg>
+              </i>
+            </button>
+          </li>
+          <li>
+            <button href="#">
+              بر اساس سایز
+              <i>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M4.43057 8.51192C4.70014 8.19743 5.17361 8.161 5.48811 8.43057L12 14.0122L18.5119 8.43057C18.8264 8.16101 19.2999 8.19743 19.5695 8.51192C19.839 8.82642 19.8026 9.29989 19.4881 9.56946L12.4881 15.5695C12.2072 15.8102 11.7928 15.8102 11.5119 15.5695L4.51192 9.56946C4.19743 9.29989 4.161 8.82641 4.43057 8.51192Z"
+                    fill="#030303"
+                  />
+                </svg>
+              </i>
+            </button>
+          </li>
+          <li>
+            <button href="#">
+              بر اساس شرایط جسمی
+              <i>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M4.43057 8.51192C4.70014 8.19743 5.17361 8.161 5.48811 8.43057L12 14.0122L18.5119 8.43057C18.8264 8.16101 19.2999 8.19743 19.5695 8.51192C19.839 8.82642 19.8026 9.29989 19.4881 9.56946L12.4881 15.5695C12.2072 15.8102 11.7928 15.8102 11.5119 15.5695L4.51192 9.56946C4.19743 9.29989 4.161 8.82641 4.43057 8.51192Z"
+                    fill="#030303"
+                  />
+                </svg>
+              </i>
+            </button>
+          </li>
+          <li>
+            <button href="#">
+              بر اساس برند
+              <i>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M4.43057 8.51192C4.70014 8.19743 5.17361 8.161 5.48811 8.43057L12 14.0122L18.5119 8.43057C18.8264 8.16101 19.2999 8.19743 19.5695 8.51192C19.839 8.82642 19.8026 9.29989 19.4881 9.56946L12.4881 15.5695C12.2072 15.8102 11.7928 15.8102 11.5119 15.5695L4.51192 9.56946C4.19743 9.29989 4.161 8.82641 4.43057 8.51192Z"
+                    fill="#030303"
+                  />
+                </svg>
+              </i>
+            </button>
+          </li>
+          <li>
+            <button href="#">
+              بر اساس برند
+              <i>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M4.43057 8.51192C4.70014 8.19743 5.17361 8.161 5.48811 8.43057L12 14.0122L18.5119 8.43057C18.8264 8.16101 19.2999 8.19743 19.5695 8.51192C19.839 8.82642 19.8026 9.29989 19.4881 9.56946L12.4881 15.5695C12.2072 15.8102 11.7928 15.8102 11.5119 15.5695L4.51192 9.56946C4.19743 9.29989 4.161 8.82641 4.43057 8.51192Z"
+                    fill="#030303"
+                  />
+                </svg>
+              </i>
+            </button>
+          </li>
+          <li>
+            <button href="#">
+              بر اساس برند
+              <i>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M4.43057 8.51192C4.70014 8.19743 5.17361 8.161 5.48811 8.43057L12 14.0122L18.5119 8.43057C18.8264 8.16101 19.2999 8.19743 19.5695 8.51192C19.839 8.82642 19.8026 9.29989 19.4881 9.56946L12.4881 15.5695C12.2072 15.8102 11.7928 15.8102 11.5119 15.5695L4.51192 9.56946C4.19743 9.29989 4.161 8.82641 4.43057 8.51192Z"
+                    fill="#030303"
+                  />
+                </svg>
+              </i>
+            </button>
+          </li>
+        </ul>
+        <a
+          href="#"
+          class="flex items-center justify-between text-lg font-medium text-secondary-shade-1 pt-3 mt-6 border-t border-secondary-shade-1"
+        >
+          راهنمای خرید تشک
+          <i>
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M15.4881 4.43057C15.8026 4.70014 15.839 5.17361 15.5694 5.48811L9.98779 12L15.5694 18.5119C15.839 18.8264 15.8026 19.2999 15.4881 19.5695C15.1736 19.839 14.7001 19.8026 14.4305 19.4881L8.43054 12.4881C8.1898 12.2072 8.1898 11.7928 8.43054 11.5119L14.4305 4.51192C14.7001 4.19743 15.1736 4.161 15.4881 4.43057Z"
+                fill="#D98B31"
+              />
+            </svg>
+          </i>
+        </a>
+      </div>
+    </div> -->
+
+    <!-- START JS -->
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+  </body>
+</html>
