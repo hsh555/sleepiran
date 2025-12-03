@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>اسلیپیران - کالای خواب شیمانا</title>
     <!-- START CSS -->
     <link rel="stylesheet" href="./css/global.css" />
   </head>
-  <body dir="rtl" class="min-h-[1000px]">
+  <body class="min-h-[1000px]">
     <!-- START HEADER -->
     <header class="header">
       <div class="container flex flex-col gap-y-4">
         <div class="flex lg:hidden items-center justify-between">
           <div class="flex items-center gap-x-5">
-            <button class="btn btn-primary btn-ghost w-[42px] h-[42px]! group">
-              <i class="group-hover:**:stroke-white">
+            <button class="btn btn-primary btn-ghost w-[42px] h-[42px]! group" aria-label="منوی اصلی">
+              <i class="group-hover:**:stroke-white" aria-hidden="true">
                 <svg
                   width="16"
                   height="14"
@@ -57,12 +57,12 @@
               </i>
             </a>
           </div>
-          <a href="#">
+          <a href="#" aria-label="صفحه اصلی">
             <figure class="flex items-center gap-x-2">
-              <img src="./images/logo-mobile.png" alt="Logo" />
+              <img src="./images/logo-mobile.png" alt="لوگوی اسلیپیران" />
               <figcaption>
                 <p class="text-xs font-semibold text-sky-blue">
-                  Sleep<span class="text-[#0054F7]!">SHiman</span>
+                  Sleep<strong class="text-[#0054F7]!">SHiman</strong>
                 </p>
                 <p class="text-2xs font-medium text-black/50 mt-0.5">
                   کالای خواب شیمانا
@@ -72,12 +72,12 @@
           </a>
         </div>
         <div class="hidden lg:flex w-full items-center gap-x-8 pt-2.5">
-          <a href="#">
+          <a href="#" aria-label="صفحه اصلی">
             <figure class="flex items-center gap-x-4">
-              <img src="./images/logo.png" alt="Logo" />
+              <img src="./images/logo.png" alt="لوگوی اسلیپیران" />
               <figcaption>
                 <p class="text-xl font-semibold text-sky-blue">
-                  Sleep<span class="text-[#0054F7]!">SHiman</span>
+                  Sleep<strong class="text-[#0054F7]!">SHiman</strong>
                 </p>
                 <p class="font-medium text-black/50 mt-0.5">
                   کالای خواب شیمانا
@@ -180,10 +180,12 @@
                     </svg>
                   </i>
                 </a>
-                <div
+                <aside
                   class="dropdown-menu absolute mt-4 top-full right-0 w-[234px] bg-white p-4 opacity-0 scale-95 invisible group-hover:opacity-100 group-hover:scale-100 group-hover:visible transition-all duration-200 ease-out"
+                  aria-label="منوی دسته‌بندی محصولات"
                 >
-                  <ul class="flex flex-col gap-y-4">
+                  <nav>
+                    <ul class="flex flex-col gap-y-4">
                     <li>
                       <details class="group w-full cursor-pointer">
                         <summary
@@ -487,7 +489,8 @@
                       </svg>
                     </i>
                   </a>
-                </div>
+                  </nav>
+                </aside>
               </li>
               <li class="flex items-center gap-x-1 px-3 py-1 text-gray-1">
                 <a
@@ -617,8 +620,10 @@
               popovertarget="popover-1"
               style="anchor-name: --anchor-1"
               class="btn btn-secondary btn-ghost btn-icon group dropdown"
+              aria-label="جستجوی محصولات"
+              aria-expanded="false"
             >
-              <i class="group-hover:**:fill-white">
+              <i class="group-hover:**:fill-white" aria-hidden="true">
                 <svg
                   width="24"
                   height="24"
@@ -634,20 +639,23 @@
               </i>
             </button>
 
-            <div
+            <search
               class="dropdown menu w-[344px] p-4 rounded-b-2xl shadow-dropdown top-3 -left-[300px]! bg-white"
               popover
               id="popover-1"
               style="position-anchor: --anchor-1"
             >
-              <input
-                type="text"
-                placeholder="محصول مد نظر را جستجو کنید..."
-                class="w-full text-sm text-dark placeholder:text-gray-2 bg-gray-5 p-4 rounded-xs"
-              />
+              <form role="search">
+                <input
+                  type="search"
+                  placeholder="محصول مد نظر را جستجو کنید..."
+                  class="w-full text-sm text-dark placeholder:text-gray-2 bg-gray-5 p-4 rounded-xs"
+                  aria-label="جستجوی محصول"
+                />
+              </form>
 
-              <div class="flex items-center justify-between mb-6">
-                <h3 class="font-medium text-dark">نتایج جستجو</h3>
+              <section class="flex items-center justify-between mb-6">
+                <h2 class="font-medium text-dark">نتایج جستجو</h2>
                 <i>
                   <svg
                     width="24"
@@ -671,28 +679,28 @@
                     />
                   </svg>
                 </i>
-              </div>
-              <div class="space-y-4 mb-8">
-                <div>
+              </section>
+              <section class="space-y-4 mb-8">
+                <article>
                   <div class="flex items-start">
                     <figure class="min-w-24 min-h-24 p-4">
-                      <img src="./images/product-1.png" alt="" />
+                      <img src="./images/product-1.png" alt="تصویر محصول تشک دو نفره انرژتیک هایپو طبی" />
                     </figure>
                     <div class="mb-3">
-                      <div class="flex items-center gap-x-2.5 mb-6">
-                        <h4 class="text-2xs font-bold text-dark">
+                      <header class="flex items-center gap-x-2.5 mb-6">
+                        <h3 class="text-2xs font-bold text-dark">
                           تشک دو نفره انرژتیک هایپو طبی فنر منفصل سایز 200*140
                           برند فالومو
-                        </h4>
+                        </h3>
                         <div class="flex items-center gap-x-1.5">
                           <figure class="min-w-5 min-h-5">
-                            <img src="./images/feature-1.png" alt="" />
+                            <img src="./images/feature-1.png" alt="ویژگی محصول" />
                           </figure>
                           <figure class="min-w-5 min-h-5">
-                            <img src="./images/feature-2.png" alt="" />
+                            <img src="./images/feature-2.png" alt="ویژگی محصول" />
                           </figure>
                         </div>
-                      </div>
+                      </header>
                       <ul
                         class="grid grid-cols-2 w-full items-center gap-x-2 gap-y-3"
                       >
@@ -1028,27 +1036,27 @@
                       جزییات و خرید محصول
                     </a>
                   </div>
-                </div>
-                <div>
+                </article>
+                <article>
                   <div class="flex items-start">
                     <figure class="min-w-24 min-h-24 p-4">
-                      <img src="./images/product-1.png" alt="" />
+                      <img src="./images/product-1.png" alt="تصویر محصول تشک دو نفره انرژتیک هایپو طبی" />
                     </figure>
                     <div class="mb-3">
-                      <div class="flex items-center gap-x-2.5 mb-6">
-                        <h4 class="text-2xs font-bold text-dark">
+                      <header class="flex items-center gap-x-2.5 mb-6">
+                        <h3 class="text-2xs font-bold text-dark">
                           تشک دو نفره انرژتیک هایپو طبی فنر منفصل سایز 200*140
                           برند فالومو
-                        </h4>
+                        </h3>
                         <div class="flex items-center gap-x-1.5">
                           <figure class="min-w-5 min-h-5">
-                            <img src="./images/feature-1.png" alt="" />
+                            <img src="./images/feature-1.png" alt="ویژگی محصول" />
                           </figure>
                           <figure class="min-w-5 min-h-5">
-                            <img src="./images/feature-2.png" alt="" />
+                            <img src="./images/feature-2.png" alt="ویژگی محصول" />
                           </figure>
                         </div>
-                      </div>
+                      </header>
                       <ul
                         class="grid grid-cols-2 w-full items-center gap-x-2 gap-y-3"
                       >
@@ -1384,10 +1392,10 @@
                       جزییات و خرید محصول
                     </a>
                   </div>
-                </div>
-              </div>
+                </article>
+              </section>
               <a href="#" class="btn btn-primary w-full">نمایش بیشتر</a>
-            </div>
+            </search>
 
             <!--  -->
 
