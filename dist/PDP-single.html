@@ -36,8 +36,8 @@
                 </svg>
               </i>
             </button>
-            <a
-              href="#"
+            <button
+              onclick="loginModal.showModal()"
               class="btn btn-primary btn-ghost w-[42px] h-[42px]! group"
             >
               <i class="group-hover:**:stroke-white">
@@ -60,7 +60,7 @@
                   />
                 </svg>
               </i>
-            </a>
+            </button>
           </div>
           <a href="#" aria-label="صفحه اصلی">
             <figure class="flex items-center gap-x-2">
@@ -1492,7 +1492,7 @@
         onclick="closeMenu()"
       ></div>
 
-      <!-- START MAIN MODAL PANEL -->
+      <!-- START MENU PANEL -->
       <aside
         id="menuPanel"
         class="w-[337px] min-w-[337px] h-dvh relative z-50 bg-white shadow-sidebar overflow-y-auto transform translate-x-full transition-transform duration-300"
@@ -1888,9 +1888,9 @@
           </footer>
         </section>
       </aside>
-      <!-- END MAIN MODAL PANEL -->
+      <!-- END MENU PANEL -->
 
-      <!-- START MAIN MODAL PANEL LEVEL 2 -->
+      <!-- START MENU PANEL LEVEL 2 -->
       <aside
         id="menuPanelLevel2"
         class="w-[337px] min-w-[337px] h-dvh flex flex-col relative z-60 bg-white shadow-sidebar overflow-y-auto transform translate-x-[674px] transition-transform duration-300"
@@ -2206,9 +2206,9 @@
           </footer>
         </section>
       </aside>
-      <!-- END MAIN MODAL PANEL LEVEL 2 -->
+      <!-- END MENU PANEL LEVEL 2 -->
 
-      <!-- START MAIN MODAL PANEL LEVEL 2 -->
+      <!-- START MENU PANEL LEVEL 3 -->
       <aside
         id="menuPanelLevel3"
         class="w-[337px] min-w-[337px] h-dvh flex flex-col relative z-80 bg-white shadow-sidebar overflow-y-auto transform translate-x-[1011px] transition-transform duration-300"
@@ -2524,7 +2524,7 @@
           </footer>
         </section>
       </aside>
-      <!-- END MAIN MODAL PANEL LEVEL 2 -->
+      <!-- END MENU PANEL LEVEL 3 -->
     </section>
     <!-- START MOBILE MENU -->
 
@@ -2538,9 +2538,9 @@
           class="w-full sm:w-[378px] flex items-center justify-between mx-auto"
         >
           <li class="w-15 min-w-15 h-15">
-            <a
-              href="#"
-              class="flex flex-col items-center justify-center text-[8px] font-medium text-dark gap-y-1.5 py-1.5"
+            <button
+              onclick="searchModal.showModal()"
+              class="w-full flex flex-col items-center justify-center text-[8px] font-medium text-dark gap-y-1.5 py-1.5"
             >
               <i>
                 <svg
@@ -2579,7 +2579,7 @@
                 </svg>
               </i>
               جستجو هوشمند
-            </a>
+            </button>
           </li>
           <li class="w-15 min-w-15 h-15" id="openMobileSearchBtn">
             <button
@@ -2750,6 +2750,267 @@
     </section>
     <!-- START MOBILE NAVIGATION -->
 
+    <!-- START MOBILE LOGIN MODAL -->
+    <dialog id="loginModal" class="modal">
+      <div class="modal-box overflow-visible shadow-sm relative px-12 py-6">
+        <form method="dialog">
+          <!-- if there is a button in form, it will close the modal -->
+          <button
+            class="absolute -top-6 left-1/2 -translate-x-1/2 size-12 flex items-center justify-center rounded-full bg-white"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="24" height="24" fill="white" />
+              <circle
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="#209AFF"
+                stroke-width="1.5"
+              />
+              <path
+                d="M14.5 9.5L9.5 14.5M9.49998 9.49998L14.5 14.5"
+                stroke="#209AFF"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+        </form>
+        <header class="my-6">
+          <h3 class="text-center text-xl font-medium text-dark">
+            ورود | ثبت نام
+          </h3>
+        </header>
+        <main>
+          <form>
+            <input
+              type="text"
+              placeholder="شماره موبایل را وارد کنید"
+              class="w-full h-[46px] rounded-[8px] bg-gray-5 px-4 text-dark outline-none! placeholder:text-2xs placeholder:text-gray-2 mb-4"
+            />
+            <div class="flex items-center justify-between">
+              <label
+                for="off-check"
+                class="flex items-center gap-x-1 text-2xs font-light text-gray-1"
+              >
+                <input
+                  type="checkbox"
+                  id="off-check"
+                  class="checkbox size-4 bg-gray-5 rounded-xs! border-none!"
+                />
+                منو از تخفیفات مطلع کن
+              </label>
+              <button
+                type="submit"
+                onclick="loginModal.close();otpModal.showModal()"
+                class="btn btn-primary h-[30px] text-xs rounded-full!"
+              >
+                ارسال کد
+                <i>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.3334 8H2.66675M2.66675 8L6.66675 4M2.66675 8L6.66675 12"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </i>
+              </button>
+            </div>
+          </form>
+        </main>
+      </div>
+      <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+      </form>
+    </dialog>
+    <!-- END MOBILE LOGIN MODAL -->
+
+    <!-- START MOBILE OTP MODAL -->
+    <dialog id="otpModal" class="modal">
+      <div class="modal-box overflow-visible shadow-sm relative px-12 py-6">
+        <form method="dialog">
+          <!-- if there is a button in form, it will close the modal -->
+          <button
+            class="absolute -top-6 left-1/2 -translate-x-1/2 size-12 flex items-center justify-center rounded-full bg-white"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="24" height="24" fill="white" />
+              <circle
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="#209AFF"
+                stroke-width="1.5"
+              />
+              <path
+                d="M14.5 9.5L9.5 14.5M9.49998 9.49998L14.5 14.5"
+                stroke="#209AFF"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+        </form>
+        <header class="my-6">
+          <h3 class="text-center text-xl font-medium text-dark">
+            کد را وارد کنید
+          </h3>
+        </header>
+        <main>
+          <form>
+            <div class="flex items-center justify-center gap-x-5" dir="ltr">
+              <input
+                type="text"
+                maxlength="1"
+                class="otp-input w-[46px] h-[46px] rounded-[8px] bg-gray-5 text-center text-dark outline-none! placeholder:text-2xs placeholder:text-gray-2 mb-4"
+              />
+              <input
+                type="text"
+                maxlength="1"
+                class="otp-input w-[46px] h-[46px] rounded-[8px] bg-gray-5 text-center text-dark outline-none! placeholder:text-2xs placeholder:text-gray-2 mb-4"
+              />
+              <input
+                type="text"
+                maxlength="1"
+                class="otp-input w-[46px] h-[46px] rounded-[8px] bg-gray-5 text-center text-dark outline-none! placeholder:text-2xs placeholder:text-gray-2 mb-4"
+              />
+              <input
+                type="text"
+                maxlength="1"
+                class="otp-input w-[46px] h-[46px] rounded-[8px] bg-gray-5 text-center text-dark outline-none! placeholder:text-2xs placeholder:text-gray-2 mb-4"
+              />
+            </div>
+
+            <div class="flex items-center justify-center">
+              <button
+                type="submit"
+                class="btn btn-primary h-[30px] text-xs rounded-full!"
+              >
+                ارسال کد
+                <i>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.3334 8H2.66675M2.66675 8L6.66675 4M2.66675 8L6.66675 12"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </i>
+              </button>
+            </div>
+          </form>
+        </main>
+      </div>
+      <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+      </form>
+    </dialog>
+    <!-- END MOBILE OTP MODAL -->
+
+    <!-- START MOBILE SEARCH MODAL -->
+    <dialog id="searchModal" class="modal">
+      <div class="modal-box px-6 py-10 h-[calc(100vh-250px)]">
+        <header class="mb-15">
+          <h3 class="text-center text-xl font-medium text-dark">
+            دنبال چه محصولی هستی؟
+          </h3>
+        </header>
+        <main class="grid grid-cols-3 gap-3">
+          <figure
+            class="col-span-1 relative rounded-[8px] bg-gray-5 overflow-hidden"
+          >
+            <img src="./images/product-2.png" class="block" alt="" />
+            <figcaption
+              class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 font-medium text-dark"
+            >
+              تشک
+            </figcaption>
+          </figure>
+          <figure
+            class="col-span-1 relative rounded-[8px] bg-gray-5 overflow-hidden"
+          >
+            <img src="./images/product-2.png" class="block" alt="" />
+            <figcaption
+              class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 font-medium text-dark"
+            >
+              تشک
+            </figcaption>
+          </figure>
+          <figure
+            class="col-span-1 relative rounded-[8px] bg-gray-5 overflow-hidden"
+          >
+            <img src="./images/product-2.png" class="block" alt="" />
+            <figcaption
+              class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 font-medium text-dark"
+            >
+              تشک
+            </figcaption>
+          </figure>
+          <figure
+            class="col-span-1 relative rounded-[8px] bg-gray-5 overflow-hidden"
+          >
+            <img src="./images/product-2.png" class="block" alt="" />
+            <figcaption
+              class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 font-medium text-dark"
+            >
+              تشک
+            </figcaption>
+          </figure>
+          <figure
+            class="col-span-1 relative rounded-[8px] bg-gray-5 overflow-hidden"
+          >
+            <img src="./images/product-2.png" class="block" alt="" />
+            <figcaption
+              class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 font-medium text-dark"
+            >
+              تشک
+            </figcaption>
+          </figure>
+          <figure
+            class="col-span-1 relative rounded-[8px] bg-gray-5 overflow-hidden"
+          >
+            <img src="./images/product-2.png" class="block" alt="" />
+            <figcaption
+              class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 font-medium text-dark"
+            >
+              تشک
+            </figcaption>
+          </figure>
+        </main>
+      </div>
+      <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+      </form>
+    </dialog>
+    <!-- END MOBILE SEARCH MODAL -->
+
     <!-- START MOBILE CART -->
     <section
       id="mobileCart"
@@ -2765,9 +3026,9 @@
       <!-- START MOBILE CART PANEL -->
       <aside
         id="cartPanel"
-        class="w-[337px] min-w-[337px] flex flex-col h-dvh relative z-50 bg-white shadow-sidebar overflow-x-hidden overflow-y-auto transform translate-x-full transition-transform duration-300"
+        class="w-[337px] min-w-[337px] flex flex-col h-dvh relative right-full z-50 bg-white shadow-sidebar overflow-x-hidden overflow-y-auto transform transition-transform duration-300"
       >
-        <section class="py-9 px-6 mb-15">
+        <section class="py-9 px-6">
           <header class="flex items-center justify-between mb-8">
             <h3 class="text-xl font-medium text-dark">سبد خرید</h3>
             <button onclick="closeMobileCart()">
@@ -3500,7 +3761,411 @@
     </section>
     <!-- END MOBILE CATEGORY CONTENT -->
 
+    <div class="h-80"></div>
+
+    <!-- START FOOTER -->
+    <footer class="bg-white pt-0 lg:pt-20">
+      <div class="container">
+        <div
+          class="grid grid-cols-12 gap-x-0 lg:gap-x-8 xl:gap-x-14 gap-y-6 lg:gap-y-11 relative -top-30 lg:top-0"
+        >
+          <section
+            class="col-span-12 xl:w-1/3 w-full xl:max-w-[436px] static xl:absolute right-0 bottom-[111px] bg-primary-light rounded-t-sm lg:rounded-lg p-6"
+          >
+            <header class="mt-0 lg:mt-2.5 mb-6 lg:mb-10">
+              <h1 class="text-[40px] font-semibold text-dark text-center">
+                Sleep<span class="text-[#0054F7]">SHiman</span>
+              </h1>
+            </header>
+            <main class="flex flex-col">
+              <p
+                class="text-xs lg:text-sm text-dark text-justify leading-7 mb-0 lg:mb-4"
+              >
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+                در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+                نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+                کتابهای زیادی در شز، و کاربردهای متنوع با هدف بهبود ابزارهای
+                کاربردی می باشد، کتابهای زیادی در شز، و کاربردهای متنوع با هدف
+                بهبود ابزارهای کاربردی می باشد، کتابهای زیادی میباشد.
+              </p>
+              <div
+                class="hidden lg:flex flex-row xl:flex-col space-x-5 xl:space-x-0 xl:space-y-5"
+              >
+                <div class="bg-white rounded-[8px] py-3 px-4">
+                  <address
+                    class="flex items-start text-sm not-italic gap-x-3 font-medium text-dark leading-8 mb-1.5"
+                  >
+                    <i>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M20.6201 8.45C19.5701 3.83 15.5401 1.75 12.0001 1.75C12.0001 1.75 12.0001 1.75 11.9901 1.75C8.4601 1.75 4.4201 3.82 3.3701 8.44C2.2001 13.6 5.3601 17.97 8.2201 20.72C9.2801 21.74 10.6401 22.25 12.0001 22.25C13.3601 22.25 14.7201 21.74 15.7701 20.72C18.6301 17.97 21.7901 13.61 20.6201 8.45ZM12.0001 13.46C10.2601 13.46 8.8501 12.05 8.8501 10.31C8.8501 8.57 10.2601 7.16 12.0001 7.16C13.7401 7.16 15.1501 8.57 15.1501 10.31C15.1501 12.05 13.7401 13.46 12.0001 13.46Z"
+                          fill="#209AFF"
+                        />
+                      </svg>
+                    </i>
+                    شعبه 1: استان فارسف شیراز، پاسداران، خیابان سوم شرقی، بعد از
+                    اولین تقاطع، کالای خواب اسلیپیران
+                  </address>
+                  <p
+                    class="flex items-start text-sm leading-8 font-medium text-dark gap-x-3 mb-2.5"
+                  >
+                    <i>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M11.05 14.95L9.2 16.8C8.81 17.19 8.19 17.19 7.79 16.81C7.68 16.7 7.57 16.6 7.46 16.49C6.43 15.45 5.5 14.36 4.67 13.22C3.85 12.08 3.19 10.94 2.71 9.81C2.24 8.67 2 7.58 2 6.54C2 5.86 2.12 5.21 2.36 4.61C2.6 4 2.98 3.44 3.51 2.94C4.15 2.31 4.85 2 5.59 2C5.87 2 6.15 2.06 6.4 2.18C6.66 2.3 6.89 2.48 7.07 2.74L9.39 6.01C9.57 6.26 9.7 6.49 9.79 6.71C9.88 6.92 9.93 7.13 9.93 7.32C9.93 7.56 9.86 7.8 9.72 8.03C9.59 8.26 9.4 8.5 9.16 8.74L8.4 9.53C8.29 9.64 8.24 9.77 8.24 9.93C8.24 10.01 8.25 10.08 8.27 10.16C8.3 10.24 8.33 10.3 8.35 10.36C8.53 10.69 8.84 11.12 9.28 11.64C9.73 12.16 10.21 12.69 10.73 13.22C10.83 13.32 10.94 13.42 11.04 13.52C11.44 13.91 11.45 14.55 11.05 14.95Z"
+                          fill="#209AFF"
+                        />
+                        <path
+                          d="M21.9701 18.33C21.9701 18.61 21.9201 18.9 21.8201 19.18C21.7901 19.26 21.7601 19.34 21.7201 19.42C21.5501 19.78 21.3301 20.12 21.0401 20.44C20.5501 20.98 20.0101 21.37 19.4001 21.62C19.3901 21.62 19.3801 21.63 19.3701 21.63C18.7801 21.87 18.1401 22 17.4501 22C16.4301 22 15.3401 21.76 14.1901 21.27C13.0401 20.78 11.8901 20.12 10.7501 19.29C10.3601 19 9.9701 18.71 9.6001 18.4L12.8701 15.13C13.1501 15.34 13.4001 15.5 13.6101 15.61C13.6601 15.63 13.7201 15.66 13.7901 15.69C13.8701 15.72 13.9501 15.73 14.0401 15.73C14.2101 15.73 14.3401 15.67 14.4501 15.56L15.2101 14.81C15.4601 14.56 15.7001 14.37 15.9301 14.25C16.1601 14.11 16.3901 14.04 16.6401 14.04C16.8301 14.04 17.0301 14.08 17.2501 14.17C17.4701 14.26 17.7001 14.39 17.9501 14.56L21.2601 16.91C21.5201 17.09 21.7001 17.3 21.8101 17.55C21.9101 17.8 21.9701 18.05 21.9701 18.33Z"
+                          fill="#209AFF"
+                        />
+                      </svg>
+                    </i>
+                    شماره فروشگاه: 09359905359 - 09169911451
+                  </p>
+                  <div class="flex items-center justify-end gap-x-4">
+                    <figure>
+                      <img src="./images/balad.png" alt="" />
+                    </figure>
+                    <figure>
+                      <img src="./images/neshan.png" alt="" />
+                    </figure>
+                  </div>
+                </div>
+                <div class="bg-white rounded-[8px] py-3 px-4">
+                  <address
+                    class="flex items-start text-sm not-italic gap-x-3 font-medium text-dark leading-8 mb-1.5"
+                  >
+                    <i>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M20.6201 8.45C19.5701 3.83 15.5401 1.75 12.0001 1.75C12.0001 1.75 12.0001 1.75 11.9901 1.75C8.4601 1.75 4.4201 3.82 3.3701 8.44C2.2001 13.6 5.3601 17.97 8.2201 20.72C9.2801 21.74 10.6401 22.25 12.0001 22.25C13.3601 22.25 14.7201 21.74 15.7701 20.72C18.6301 17.97 21.7901 13.61 20.6201 8.45ZM12.0001 13.46C10.2601 13.46 8.8501 12.05 8.8501 10.31C8.8501 8.57 10.2601 7.16 12.0001 7.16C13.7401 7.16 15.1501 8.57 15.1501 10.31C15.1501 12.05 13.7401 13.46 12.0001 13.46Z"
+                          fill="#209AFF"
+                        />
+                      </svg>
+                    </i>
+                    شعبه 1: استان فارسف شیراز، پاسداران، خیابان سوم شرقی، بعد از
+                    اولین تقاطع، کالای خواب اسلیپیران
+                  </address>
+                  <p
+                    class="flex items-start text-sm leading-8 font-medium text-dark gap-x-3 mb-2.5"
+                  >
+                    <i>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M11.05 14.95L9.2 16.8C8.81 17.19 8.19 17.19 7.79 16.81C7.68 16.7 7.57 16.6 7.46 16.49C6.43 15.45 5.5 14.36 4.67 13.22C3.85 12.08 3.19 10.94 2.71 9.81C2.24 8.67 2 7.58 2 6.54C2 5.86 2.12 5.21 2.36 4.61C2.6 4 2.98 3.44 3.51 2.94C4.15 2.31 4.85 2 5.59 2C5.87 2 6.15 2.06 6.4 2.18C6.66 2.3 6.89 2.48 7.07 2.74L9.39 6.01C9.57 6.26 9.7 6.49 9.79 6.71C9.88 6.92 9.93 7.13 9.93 7.32C9.93 7.56 9.86 7.8 9.72 8.03C9.59 8.26 9.4 8.5 9.16 8.74L8.4 9.53C8.29 9.64 8.24 9.77 8.24 9.93C8.24 10.01 8.25 10.08 8.27 10.16C8.3 10.24 8.33 10.3 8.35 10.36C8.53 10.69 8.84 11.12 9.28 11.64C9.73 12.16 10.21 12.69 10.73 13.22C10.83 13.32 10.94 13.42 11.04 13.52C11.44 13.91 11.45 14.55 11.05 14.95Z"
+                          fill="#209AFF"
+                        />
+                        <path
+                          d="M21.9701 18.33C21.9701 18.61 21.9201 18.9 21.8201 19.18C21.7901 19.26 21.7601 19.34 21.7201 19.42C21.5501 19.78 21.3301 20.12 21.0401 20.44C20.5501 20.98 20.0101 21.37 19.4001 21.62C19.3901 21.62 19.3801 21.63 19.3701 21.63C18.7801 21.87 18.1401 22 17.4501 22C16.4301 22 15.3401 21.76 14.1901 21.27C13.0401 20.78 11.8901 20.12 10.7501 19.29C10.3601 19 9.9701 18.71 9.6001 18.4L12.8701 15.13C13.1501 15.34 13.4001 15.5 13.6101 15.61C13.6601 15.63 13.7201 15.66 13.7901 15.69C13.8701 15.72 13.9501 15.73 14.0401 15.73C14.2101 15.73 14.3401 15.67 14.4501 15.56L15.2101 14.81C15.4601 14.56 15.7001 14.37 15.9301 14.25C16.1601 14.11 16.3901 14.04 16.6401 14.04C16.8301 14.04 17.0301 14.08 17.2501 14.17C17.4701 14.26 17.7001 14.39 17.9501 14.56L21.2601 16.91C21.5201 17.09 21.7001 17.3 21.8101 17.55C21.9101 17.8 21.9701 18.05 21.9701 18.33Z"
+                          fill="#209AFF"
+                        />
+                      </svg>
+                    </i>
+                    شماره فروشگاه: 09359905359 - 09169911451
+                  </p>
+                  <div class="flex items-center justify-end gap-x-4">
+                    <figure>
+                      <img src="./images/balad.png" alt="" />
+                    </figure>
+                    <figure>
+                      <img src="./images/neshan.png" alt="" />
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </section>
+          <div class="col-span-4 hidden xl:block"></div>
+          <section
+            class="col-span-12 lg:col-span-7 xl:col-span-5 flex flex-col lg:flex-row items-start gap-y-4 gap-x-4"
+          >
+            <div
+              class="collapse border lg:border-none border-gray-5 p-6 lg:p-0 rounded-[8px] lg:rounded-none"
+            >
+              <input type="checkbox" class="peer" checked />
+              <div
+                class="collapse-title font-semibold lg:font-bold text-dark flex items-center justify-between lg:justify-start text-nowrap p-0 gap-x-1 peer-checked:*:rotate-180"
+              >
+                برند های کالای خواب
+                <i class="transition-transform duration-100">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.9201 8.9502L13.4001 15.4702C12.6301 16.2402 11.3701 16.2402 10.6001 15.4702L4.08008 8.9502"
+                      stroke="#030303"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </i>
+              </div>
+              <div class="collapse-content p-0 text-sm">
+                <ul
+                  class="text-dark *:hover:text-primary *:transition-colors *:duration-100 mt-6 space-y-4"
+                >
+                  <li>
+                    <a href="#"> تشک خوشخواب </a>
+                  </li>
+                  <li>
+                    <a href="#"> تشک خوشخواب </a>
+                  </li>
+                  <li>
+                    <a href="#"> تشک خوشخواب </a>
+                  </li>
+                  <li>
+                    <a href="#"> تشک خوشخواب </a>
+                  </li>
+                  <li>
+                    <a href="#"> تشک خوشخواب </a>
+                  </li>
+                  <li>
+                    <a href="#"> تشک خوشخواب </a>
+                  </li>
+                  <li>
+                    <a href="#"> تشک خوشخواب </a>
+                  </li>
+                  <li>
+                    <a href="#"> تشک خوشخواب </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="collapse border lg:border-none border-gray-5 p-6 lg:p-0 rounded-[8px] lg:rounded-none"
+            >
+              <input type="checkbox" class="peer" checked />
+              <div
+                class="collapse-title font-semibold lg:font-bold text-dark flex items-center justify-between lg:justify-start text-nowrap p-0 gap-x-1 peer-checked:*:rotate-180"
+              >
+                خدمات مشتریان
+                <i class="transition-transform duration-100">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.9201 8.9502L13.4001 15.4702C12.6301 16.2402 11.3701 16.2402 10.6001 15.4702L4.08008 8.9502"
+                      stroke="#030303"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </i>
+              </div>
+              <div class="collapse-content p-0 text-sm">
+                <ul
+                  class="text-dark *:hover:text-primary *:transition-colors *:duration-100 mt-6 space-y-4"
+                >
+                  <li>
+                    <a href="#"> تشک خوشخواب </a>
+                  </li>
+                  <li>
+                    <a href="#"> تشک خوشخواب </a>
+                  </li>
+                  <li>
+                    <a href="#"> تشک خوشخواب </a>
+                  </li>
+                  <li>
+                    <a href="#"> تشک خوشخواب </a>
+                  </li>
+                  <li>
+                    <a href="#"> تشک خوشخواب </a>
+                  </li>
+                  <li>
+                    <a href="#"> تشک خوشخواب </a>
+                  </li>
+                  <li>
+                    <a href="#"> تشک خوشخواب </a>
+                  </li>
+                  <li>
+                    <a href="#"> تشک خوشخواب </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="collapse border lg:border-none border-gray-5 p-6 lg:p-0 rounded-[8px] lg:rounded-none"
+            >
+              <input type="checkbox" class="peer" checked />
+              <div
+                class="collapse-title font-semibold lg:font-bold text-dark flex items-center justify-between lg:justify-start text-nowrap p-0 gap-x-1 peer-checked:*:rotate-180"
+              >
+                خدمات مشتریان
+                <i class="transition-transform duration-100">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.9201 8.9502L13.4001 15.4702C12.6301 16.2402 11.3701 16.2402 10.6001 15.4702L4.08008 8.9502"
+                      stroke="#030303"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </i>
+              </div>
+              <div class="collapse-content p-0 text-sm">
+                <ul
+                  class="text-dark *:hover:text-primary *:transition-colors *:duration-100 mt-6 space-y-4"
+                >
+                  <li>
+                    <a href="#"> تشک خوشخواب </a>
+                  </li>
+                  <li>
+                    <a href="#"> تشک خوشخواب </a>
+                  </li>
+                  <li>
+                    <a href="#"> تشک خوشخواب </a>
+                  </li>
+                  <li>
+                    <a href="#"> تشک خوشخواب </a>
+                  </li>
+                  <li>
+                    <a href="#"> تشک خوشخواب </a>
+                  </li>
+                  <li>
+                    <a href="#"> تشک خوشخواب </a>
+                  </li>
+                  <li>
+                    <a href="#"> تشک خوشخواب </a>
+                  </li>
+                  <li>
+                    <a href="#"> تشک خوشخواب </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="col-span-12 lg:hidden space-y-4">
+            <div class="flex items-center gap-x-4 p-3 rounded-[8px] bg-gray-5">
+              <figure class="size-14 shrink-0 rounded-xs overflow-hidden">
+                <img src="./images/product-2.png" alt="" />
+              </figure>
+              <p class="text-sm font-medium text-dark">
+                بیش از 25 سال سابقه در صنعت کالای خواب
+              </p>
+            </div>
+            <div class="p-3 rounded-[8px] bg-gray-5 space-y-4">
+              <address class="text-xs font-medium text-dark not-italic">
+                <span class="font-bold">شعبه 1:</span> استان فارس، شیراز،
+                پاسداران، خیابان سوم شرقی، کالای خواب پوربناد
+              </address>
+              <div class="flex items-center justify-between gap-x-2">
+                <p class="text-2xs font-medium text-dark">
+                  تماس : 09359905359 - 09169911451
+                </p>
+                <div class="flex items-center gap-x-2">
+                  <figure class="w-20 bg-white rounded-xs">
+                    <img src="./images/balad.png" class="block" alt="" />
+                  </figure>
+                  <figure class="w-20 bg-white rounded-xs">
+                    <img src="./images/neshan.png" class="block" alt="" />
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <div class="p-3 rounded-[8px] bg-gray-5 space-y-4">
+              <address class="text-xs font-medium text-dark not-italic">
+                <span class="font-bold">شعبه 1:</span> استان فارس، شیراز،
+                پاسداران، خیابان سوم شرقی، کالای خواب پوربناد
+              </address>
+              <div class="flex items-center justify-between gap-x-2">
+                <p class="text-2xs font-medium text-dark">
+                  تماس : 09359905359 - 09169911451
+                </p>
+                <div class="flex items-center gap-x-2">
+                  <figure class="w-20 bg-white rounded-xs">
+                    <img src="./images/balad.png" class="block" alt="" />
+                  </figure>
+                  <figure class="w-20 bg-white rounded-xs">
+                    <img src="./images/neshan.png" class="block" alt="" />
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section
+            class="col-span-12 lg:col-span-5 xl:col-span-3 bg-initial lg:bg-primary-light rounded-[8px] p-0 lg:p-6"
+          >
+            <header class="hidden lg:block mb-8">
+              <h1 class="text-xl font-semibold text-dark text-center">
+                مجوز های کسب و کار آنلاین
+              </h1>
+            </header>
+            <div
+              class="flex flex-row justify-center gap-x-5 lg:flex-col items-center gap-y-8"
+            >
+              <figure
+                class="w-full max-w-[170px] h-full max-h-[170px] rounded-[8px] bg-white shadow-sm p-2.5"
+              >
+                <img src="./images/certificate.png" class="block" alt="" />
+              </figure>
+              <figure
+                class="w-full max-w-[170px] h-full max-h-[170px] rounded-[8px] bg-white shadow-sm p-2.5"
+              >
+                <img src="./images/certificate.png" class="block" alt="" />
+              </figure>
+            </div>
+          </section>
+          <section
+            class="hidden lg:block col-span-12 py-6 border-t border-gray-4"
+          >
+            <p class="text-center text-sm text-dark">
+              فروشگاه اینترنتی اسلیپیران، ارائه‌دهنده انواع تشک و کالای خواب با
+              تضمین کیفیت، اصالت و ارسال سریع به سراسر کشور.
+            </p>
+          </section>
+        </div>
+      </div>
+    </footer>
+    <!-- END FOOTER -->
+
     <!-- START JS -->
+    <script src="./js/main.js"></script>
     <script src="./js/header.js"></script>
   </body>
 </html>

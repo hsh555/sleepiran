@@ -8,12 +8,14 @@
 
 @plugin "daisyui" {
   themes: false;
+  /* include: modal; */
 }
 
 :root {
   /* colors */
   --current: currentColor;
   --sl-c-transparent: transparent;
+  --sl-c-background: #F9FCFD;
   --sl-c-primary: #209aff;
   --sl-c-primary-light: #e6f4ff;
   --sl-c-primary-semilight: #cde9ff;
@@ -43,6 +45,7 @@
   /* colors */
   --color-corrent: var(--current);
   --color-transparent: var(--sl-c-transparent);
+  --color-background: var(--sl-c-background);
   --color-primary: var(--sl-c-primary);
   --color-primary-light: var(--sl-c-primary-light);
   --color-primary-semilight: var(--sl-c-primary-semilight);
@@ -72,7 +75,7 @@
 
 @layer base {
   body {
-    @apply font-dana;
+    @apply font-dana bg-background;
   }
 }
 
@@ -96,4 +99,14 @@
     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.06);
   }
 
+}
+
+@layer components {
+  .modal {
+    @apply inset-0! bg-black/30! backdrop-blur-sm!;
+
+    .modal-box {
+      @apply bg-white! rounded-[8px]!;
+    }
+  }
 }

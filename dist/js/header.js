@@ -1,5 +1,5 @@
+// -------------- Mobile Menu --------------- //
 
-// Mobile Menu Scripts
 const openMenuBtn = document.getElementById("openMenuBtn");
 const mobileMenu = document.getElementById("mobileMenu");
 
@@ -82,13 +82,13 @@ const cartPanel = document.getElementById("cartPanel");
 
 openMobileCartBtn.addEventListener("click", () => {
   mobileCart.classList.remove("opacity-0", "pointer-events-none");
-  cartPanel.classList.remove("translate-x-full");
+  cartPanel.classList.add("translate-x-full");
 
   document.body.classList.add("overflow-hidden");
 });
 
 function closeMobileCart() {
-  cartPanel.classList.add("translate-x-full");
+  cartPanel.classList.remove("translate-x-full");
 
   setTimeout(() => {
     mobileCart.classList.add("opacity-0", "pointer-events-none");
