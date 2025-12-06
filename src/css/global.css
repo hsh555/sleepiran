@@ -8,14 +8,13 @@
 
 @plugin "daisyui" {
   themes: false;
-  /* include: modal; */
 }
 
 :root {
   /* colors */
   --current: currentColor;
   --sl-c-transparent: transparent;
-  --sl-c-background: #F9FCFD;
+  --sl-c-background: #f9fcfd;
   --sl-c-primary: #209aff;
   --sl-c-primary-light: #e6f4ff;
   --sl-c-primary-semilight: #cde9ff;
@@ -99,6 +98,17 @@
     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.06);
   }
 
+  .shadow-feature {
+    box-shadow: 0 4px 12px -4px rgba(82, 135, 157, 0.25);
+  }
+
+  .shadow-card {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .tooltip-light {
+    --tt-bg: var(--color-gray-5);
+  }
 }
 
 @layer components {
@@ -107,6 +117,13 @@
 
     .modal-box {
       @apply bg-white! rounded-[8px]!;
+    }
+  }
+
+  .radio-warning {
+    
+    @layer daisyui.l1.l2 {
+      --input-color: var(--sl-c-secondary) !important /* var(--color-warning) */;
     }
   }
 }
