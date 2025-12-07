@@ -12,6 +12,7 @@
     "@tailwindcss/nesting": "^0.0.0-insiders.565cd3e",
     "@tailwindcss/postcss": "^4.1.17",
     "flowbite": "^4.0.1",
+    "lightgallery": "^2.9.0",
     "postcss-import": "^16.1.1",
     "tailwindcss": "^4.1.17"
   },

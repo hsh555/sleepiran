@@ -28,8 +28,9 @@
   --sl-c-success: #54a466;
   --sl-c-danger: #f32e2e;
   --sl-c-sky-blue: #003460;
-  --cl-c-gray-1: #2f3136;
+  --sl-c-gray-1: #2f3136;
   --sl-c-gray-2: #808184;
+  --sl-c-gray-3: #B1B1B1;
   --sl-c-gray-4: #d9d9d9;
   --sl-c-gray-5: #f9f9f9;
   --sl-c-dark: #030303;
@@ -58,8 +59,9 @@
   --color-success: var(--sl-c-success);
   --color-danger: var(--sl-c-danger);
   --color-sky-blue: var(--sl-c-sky-blue);
-  --color-gray-1: var(--cl-c-gray-1);
+  --color-gray-1: var(--sl-c-gray-1);
   --color-gray-2: var(--sl-c-gray-2);
+  --color-gray-3: var(--sl-c-gray-3);
   --color-gray-4: var(--sl-c-gray-4);
   --color-gray-5: var(--sl-c-gray-5);
   --color-black: var(--sl-c-black);
@@ -106,6 +108,10 @@
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   }
 
+  .shadow-drawer {
+    box-shadow: 0 -4px 4px 0 rgba(0, 0, 0, 0.15);
+  }
+
   .tooltip-light {
     --tt-bg: var(--color-gray-5);
   }
@@ -126,4 +132,19 @@
       --input-color: var(--sl-c-secondary) !important /* var(--color-warning) */;
     }
   }
+}
+
+
+/* For browsers that support :focus-visible */
+.gallery-thumbnail.is-active, .lightbox-thumbnail.is-active {
+  @apply border-2! border-secondary!;
+}
+
+.splide__pagination__page {
+  @apply size-4! bg-gray-2;
+}
+
+.splide__pagination__page.is-active{
+  transform: none;
+  @apply size-4! bg-primary!;
 }
