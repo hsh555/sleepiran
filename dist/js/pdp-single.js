@@ -81,6 +81,28 @@ productsToggleBtn.addEventListener("click", function () {
   productsToggleBtn.classList.toggle("*:rotate-180");
 });
 
+const productsContent2 = document.getElementById("products-content2");
+const productsShadow2 = document.getElementById("products-shadow2");
+const productsToggleBtn2 = document.getElementById("productsToggleBtn2");
+
+productsToggleBtn2.addEventListener("click", function () {
+  productsContent2.classList.toggle("h-[500px]");
+  productsContent2.classList.toggle("h-auto");
+  productsShadow2.classList.toggle("hidden");
+  productsToggleBtn2.classList.toggle("*:rotate-180");
+});
+
+const productsContent3 = document.getElementById("products-content3");
+const productsShadow3 = document.getElementById("products-shadow3");
+const productsToggleBtn3 = document.getElementById("productsToggleBtn3");
+
+productsToggleBtn3.addEventListener("click", function () {
+  productsContent3.classList.toggle("h-[500px]");
+  productsContent3.classList.toggle("h-auto");
+  productsShadow3.classList.toggle("hidden");
+  productsToggleBtn3.classList.toggle("*:rotate-180");
+});
+
 // Experiences Carousel
 const expSlider = new Splide("#exp-carousel", {
   direction: "rtl",
@@ -209,3 +231,28 @@ function closeProductPanel() {
     document.body.classList.remove("overflow-hidden");
   }, 300);
 }
+
+// Fast Access
+const fastAccess = document.getElementById('fast-access');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY >= 50) {
+    bottomNav.classList.add('hide');
+  } else {
+    bottomNav.classList.remove('hide');
+  }
+});
+
+const mobilePrice = document.getElementById('mobile-price');
+const mobilePriceDetails = document.getElementById('mobile-price-details');
+
+window.addEventListener('scroll', () => {
+  const rect = mobilePrice.getBoundingClientRect();
+
+  // وقتی sticky شد و به بالای viewport رسید
+  if (rect.top <= 74) { // چون top-[74px]
+    mobilePriceDetails.classList.add('hidden'); // مخفی شدن
+  } else {
+    mobilePriceDetails.classList.remove('hidden'); // ظاهر شدن دوباره
+  }
+});

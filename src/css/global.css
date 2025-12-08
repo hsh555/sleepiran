@@ -30,7 +30,7 @@
   --sl-c-sky-blue: #003460;
   --sl-c-gray-1: #2f3136;
   --sl-c-gray-2: #808184;
-  --sl-c-gray-3: #B1B1B1;
+  --sl-c-gray-3: #b1b1b1;
   --sl-c-gray-4: #d9d9d9;
   --sl-c-gray-5: #f9f9f9;
   --sl-c-dark: #030303;
@@ -75,6 +75,10 @@
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply font-dana bg-background;
   }
@@ -127,16 +131,17 @@
   }
 
   .radio-warning {
-    
     @layer daisyui.l1.l2 {
-      --input-color: var(--sl-c-secondary) !important /* var(--color-warning) */;
+      --input-color: var(
+        --sl-c-secondary
+      ) !important /* var(--color-warning) */;
     }
   }
 }
 
-
 /* For browsers that support :focus-visible */
-.gallery-thumbnail.is-active, .lightbox-thumbnail.is-active {
+.gallery-thumbnail.is-active,
+.lightbox-thumbnail.is-active {
   @apply border-2! border-secondary!;
 }
 
@@ -144,7 +149,25 @@
   @apply size-4! bg-gray-2;
 }
 
-.splide__pagination__page.is-active{
+.splide__pagination__page.is-active {
   transform: none;
   @apply size-4! bg-primary!;
+}
+
+#bottom-nav, #mobile-price-details {
+  transition: all 0.3s ease;
+}
+
+#bottom-nav.hide {
+  transform: translateY(-100%);
+  opacity: 0;
+  position: fixed;
+  top: -100px;
+}
+
+#mobile-price-details.hide {
+  transform: translateY(-100%);
+  opacity: 0;
+  position: fixed;
+  top: -16px;
 }

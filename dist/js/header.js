@@ -75,6 +75,7 @@ document.addEventListener("click", function (event) {
 
 // Mobile Cart 
 const openMobileCartBtn = document.getElementById("openMobileCartBtn");
+const openMobileCartDeskBtn = document.getElementById("openMobileCartDeskBtn");
 const mobileCart = document.getElementById("mobileCart");
 
 // Cart Panel
@@ -87,12 +88,20 @@ openMobileCartBtn.addEventListener("click", () => {
   document.body.classList.add("overflow-hidden");
 });
 
+openMobileCartDeskBtn.addEventListener("click", () => {
+  mobileCart.classList.remove("opacity-0", "pointer-events-none");
+  cartPanel.classList.add("translate-x-full");
+
+  document.body.classList.add("overflow-hidden");
+});
+
 function closeMobileCart() {
   cartPanel.classList.remove("translate-x-full");
 
   setTimeout(() => {
     mobileCart.classList.add("opacity-0", "pointer-events-none");
     openMobileCartBtn.classList.remove("hidden");
+    openMobileCartDeskBtn.classList.remove("hidden");
     document.body.classList.remove("overflow-hidden");
   }, 300);
 }

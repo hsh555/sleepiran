@@ -1586,6 +1586,12 @@
   .top-10 {
     top: calc(var(--spacing) * 10);
   }
+  .top-\[74px\] {
+    top: 74px;
+  }
+  .top-\[100px\] {
+    top: 100px;
+  }
   .top-full {
     top: 100%;
   }
@@ -1662,6 +1668,9 @@
   }
   .z-10 {
     z-index: 10;
+  }
+  .z-20 {
+    z-index: 20;
   }
   .z-39 {
     z-index: 39;
@@ -2233,6 +2242,12 @@
   .resize {
     resize: both;
   }
+  .scroll-mt-40 {
+    scroll-margin-top: calc(var(--spacing) * 40);
+  }
+  .scroll-mt-44 {
+    scroll-margin-top: calc(var(--spacing) * 44);
+  }
   .list-disc {
     list-style-type: disc;
   }
@@ -2303,6 +2318,10 @@
   .gap-x-0 {
     -moz-column-gap: calc(var(--spacing) * 0);
          column-gap: calc(var(--spacing) * 0);
+  }
+  .gap-x-0\.5 {
+    -moz-column-gap: calc(var(--spacing) * 0.5);
+         column-gap: calc(var(--spacing) * 0.5);
   }
   .gap-x-1 {
     -moz-column-gap: calc(var(--spacing) * 1);
@@ -3340,6 +3359,11 @@
     }
   }
   @media (width >= 66.25rem) {
+    .lg\:mb-9 {
+      margin-bottom: calc(var(--spacing) * 9);
+    }
+  }
+  @media (width >= 66.25rem) {
     .lg\:mb-10 {
       margin-bottom: calc(var(--spacing) * 10);
     }
@@ -3372,6 +3396,11 @@
   @media (width >= 66.25rem) {
     .lg\:flex {
       display: flex;
+    }
+  }
+  @media (width >= 66.25rem) {
+    .lg\:grid {
+      display: grid;
     }
   }
   @media (width >= 66.25rem) {
@@ -3936,7 +3965,7 @@
   --sl-c-sky-blue: #003460;
   --sl-c-gray-1: #2f3136;
   --sl-c-gray-2: #808184;
-  --sl-c-gray-3: #B1B1B1;
+  --sl-c-gray-3: #b1b1b1;
   --sl-c-gray-4: #d9d9d9;
   --sl-c-gray-5: #f9f9f9;
   --sl-c-dark: #030303;
@@ -3944,6 +3973,9 @@
   --sl-c-white: #ffffff;
 }
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     background-color: var(--color-background);
     font-family: var(--font-dana);
@@ -3998,11 +4030,14 @@
   }
   @layer daisyui.l1.l2 {
     .radio-warning {
-      --input-color: var(--sl-c-secondary) !important;
+      --input-color: var(
+        --sl-c-secondary
+      ) !important;
     }
   }
 }
-.gallery-thumbnail.is-active, .lightbox-thumbnail.is-active {
+.gallery-thumbnail.is-active,
+.lightbox-thumbnail.is-active {
   border-style: var(--tw-border-style) !important;
   border-width: 2px !important;
   border-color: var(--color-secondary) !important;
@@ -4017,6 +4052,21 @@
   width: calc(var(--spacing) * 4) !important;
   height: calc(var(--spacing) * 4) !important;
   background-color: var(--color-primary) !important;
+}
+#bottom-nav, #mobile-price-details {
+  transition: all 0.3s ease;
+}
+#bottom-nav.hide {
+  transform: translateY(-100%);
+  opacity: 0;
+  position: fixed;
+  top: -100px;
+}
+#mobile-price-details.hide {
+  transform: translateY(-100%);
+  opacity: 0;
+  position: fixed;
+  top: -16px;
 }
 @layer base {
   :root {
