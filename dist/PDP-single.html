@@ -2371,8 +2371,8 @@
     <!-- END PRODUCT DETAILS SECTION -->
 
     <!-- START MOBILE PRICE SECTION -->
-      <section id="mobile-price"
-              class="lg:hidden sticky top-[74px] z-20 bg-white py-2 mb-6"
+      <section
+              class="lg:hidden bg-white py-2 mb-6"
             >
         <div class="container flex flex-col items-center gap-y-4 ">
                         <div id="mobile-price-details"
@@ -2483,7 +2483,7 @@
                   </button>
                 </div>
               </div>
-              <div class="w-full flex lg:hidden items-center justify-between">
+              <div class="fixed z-10 bottom-[76px] w-full flex lg:hidden items-center justify-between px-[25px] py-4 bg-white">
                 <button
                   id="openProductNavMenuBtn"
                   class="btn btn-primary-semilight h-[33px]! rounded-full!"
@@ -2774,7 +2774,7 @@
             </ul>
           </nav>
           <div class="flex items-center gap-x-4">
-            <a href="#" class="btn btn-primary btn-ghost">رزرو وقت مشاوره</a>
+            <button onclick="reserveModal.showModal()" class="btn btn-primary btn-ghost">رزرو وقت مشاوره</button>
             <a href="#" class="btn btn-primary btn-ghost">مشاوره تلفنی</a>
             <button class="btn btn-primary btn-ghost btn-icon group" aria-label="اشتراک‌گذاری">
               <i class="group-hover:**:stroke-white" aria-hidden="true">
@@ -17033,6 +17033,85 @@
       </form>
     </dialog>
     <!-- END MOBILE OTP MODAL -->
+
+    <!-- START RESERVE MODAL -->
+    <dialog id="reserveModal" class="modal">
+      <div class="modal-box overflow-visible shadow-sm relative px-8 py-6">
+        <header class="mb-6">
+          <h3 class="text-center text-xl font-medium text-dark">
+           رزرو وقت مشاوره قبل از خرید
+          </h3>
+        </header>
+        <main>
+          <form class="grid grid-cols-2 gap-y-4 gap-x-2">
+            <div class="col-span-2">
+              <label class="text-sm text-dark font-medium mb-2">نام و نام خانوادگی:</label>
+              <input
+              type="text"
+              class="w-full h-10 rounded-[8px] bg-gray-5 px-4 text-dark outline-none! placeholder:text-2xs placeholder:text-gray-2"
+            />
+            </div>
+            <div class="col-span-2">
+              <label class="text-sm text-dark font-medium mb-2">شماره تماس:</label>
+              <input
+              type="text"
+              class="w-full h-10 rounded-[8px] bg-gray-5 px-4 text-dark outline-none! placeholder:text-2xs placeholder:text-gray-2"
+            />
+            </div>
+            <div class="col-span-2">
+              <label class="text-sm text-dark font-medium mb-2">شهر محل سکونت:</label>
+              <input
+              type="text"
+              class="w-full h-10 rounded-[8px] bg-gray-5 px-4 text-dark outline-none! placeholder:text-2xs placeholder:text-gray-2"
+            />
+            </div>
+             <div class="col-span-2">
+              <label class="text-sm text-dark font-medium mb-2">سن:</label>
+              <input
+              type="text"
+              class="w-full h-10 rounded-[8px] bg-gray-5 px-4 text-dark outline-none! placeholder:text-2xs placeholder:text-gray-2"
+            />
+            </div>
+            <div class="col-span-2">
+              <label class="text-sm text-dark font-medium mb-2">مسئله‌ای که احساس می‌کنید باعث شده نیاز به مشاوره داشته باشید؟</label>
+              <textarea
+              type="text"
+              class="w-full h-20 rounded-[8px] bg-gray-5 px-4 text-dark outline-none! placeholder:text-2xs placeholder:text-gray-2"
+            ></textarea>
+            </div>
+             <div class="col-span-1">
+              <label class="text-sm text-dark font-medium mb-2">چه روزی مناسب تماس می‌دانید؟</label>
+              <input
+              type="text"
+              class="w-full h-10 rounded-[8px] bg-gray-5 px-4 text-dark outline-none! placeholder:text-2xs placeholder:text-gray-2"
+            />
+            </div>
+             <div class="col-span-1">
+              <label class="text-sm text-dark font-medium mb-2">چه ساعتی؟</label>
+              <input
+              type="text"
+              class="w-full h-10 rounded-[8px] bg-gray-5 px-4 text-dark outline-none! placeholder:text-2xs placeholder:text-gray-2"
+            />
+            </div>
+
+
+            <div class="col-span-2">
+              <button
+                type="button"
+                onclick="loginModal.close();otpModal.showModal()"
+                class="btn btn-primary h-[30px] text-xs w-full!"
+              >
+               درخواست وقت مشاوره
+              </button>
+            </div>
+          </form>
+        </main>
+      </div>
+      <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+      </form>
+    </dialog>
+    <!-- END MOBILE LOGIN MODAL -->
 
     <!-- START MOBILE SEARCH MODAL -->
     <dialog id="searchModal" class="modal">
