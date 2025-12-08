@@ -233,26 +233,26 @@ function closeProductPanel() {
 }
 
 // Fast Access
-const fastAccess = document.getElementById('fast-access');
+// const fastAccess = document.getElementById('fast-access');
 
-window.addEventListener('scroll', () => {
-  if (window.scrollY >= 50) {
-    bottomNav.classList.add('hide');
-  } else {
-    bottomNav.classList.remove('hide');
-  }
-});
+// window.addEventListener('scroll', () => {
+//   if (window.scrollY >= 50) {
+//     bottomNav.classList.add('hide');
+//   } else {
+//     bottomNav.classList.remove('hide');
+//   }
+// });
 
-const mobilePrice = document.getElementById('mobile-price');
-const mobilePriceDetails = document.getElementById('mobile-price-details');
+// const mobilePrice = document.getElementById('mobile-price');
+// const mobilePriceDetails = document.getElementById('mobile-price-details');
 
-window.addEventListener('scroll', () => {
-  const rect = mobilePrice.getBoundingClientRect();
+// window.addEventListener('scroll', () => {
+//   const rect = mobilePrice.getBoundingClientRect();
 
-  // وقتی sticky شد و به بالای viewport رسید
-  if (rect.top <= 74) { // چون top-[74px]
-    mobilePriceDetails.classList.add('hidden'); // مخفی شدن
-  } else {
-    mobilePriceDetails.classList.remove('hidden'); // ظاهر شدن دوباره
-  }
-});
+//   // وقتی sticky شد و به بالای viewport رسید
+//   if (rect.top <= 74) { // چون top-[74px]
+//     mobilePriceDetails.classList.add('hidden'); // مخفی شدن
+//   } else {
+//     mobilePriceDetails.classList.remove('hidden'); // ظاهر شدن دوباره
+//   }
+// });
