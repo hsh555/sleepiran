@@ -232,27 +232,8 @@ function closeProductPanel() {
   }, 300);
 }
 
-// Fast Access
-// const fastAccess = document.getElementById('fast-access');
+// ------------ Toggle Check -------------- //
+if (window.innerWidth < 768) {
+  document.getElementById("tech-info-check-1").checked = false;
+}
 
-// window.addEventListener('scroll', () => {
-//   if (window.scrollY >= 50) {
-//     bottomNav.classList.add('hide');
-//   } else {
-//     bottomNav.classList.remove('hide');
-//   }
-// });
-
-// const mobilePrice = document.getElementById('mobile-price');
-// const mobilePriceDetails = document.getElementById('mobile-price-details');
-
-// window.addEventListener('scroll', () => {
-//   const rect = mobilePrice.getBoundingClientRect();
-
-//   // وقتی sticky شد و به بالای viewport رسید
-//   if (rect.top <= 74) { // چون top-[74px]
-//     mobilePriceDetails.classList.add('hidden'); // مخفی شدن
-//   } else {
-//     mobilePriceDetails.classList.remove('hidden'); // ظاهر شدن دوباره
-//   }
-// });

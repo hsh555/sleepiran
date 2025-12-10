@@ -21,7 +21,7 @@
     }
   }
 
-    &-primary-semilight {
+  &-primary-semilight {
     @apply border-primary-semilight bg-primary-semilight text-dark outline-primary-semilight;
     @media (hover: hover) {
       &:hover {
@@ -35,6 +35,33 @@
     @media (hover: hover) {
       &:hover {
         @apply border-secondary-dark bg-secondary-dark;
+      }
+    }
+  }
+
+  &-secondary-shade {
+    @apply border-secondary-shade-1 bg-secondary-shade-1 text-white outline-secondary-shade-1;
+    @media (hover: hover) {
+      &:hover {
+        @apply border-secondary-shade-1 bg-secondary-shade-1;
+      }
+    }
+  }
+
+  &-sky-blue {
+    @apply border-sky-blue bg-sky-blue text-white outline-sky-blue;
+    @media (hover: hover) {
+      &:hover {
+        @apply border-sky-blue-shade-1 bg-sky-blue-shade-1;
+      }
+    }
+  }
+
+  &-sky-blue-shade {
+    @apply border-sky-blue-shade-1 bg-sky-blue-shade-1 text-white outline-sky-blue-shade-1;
+    @media (hover: hover) {
+      &:hover {
+        @apply border-sky-blue-shade-1 bg-sky-blue-shade-1;
       }
     }
   }
