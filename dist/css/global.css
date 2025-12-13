@@ -2030,6 +2030,12 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
   }
+  .line-clamp-4 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+  }
   @layer daisyui.l1.l2.l3 {
     .mask {
       display: inline-block;
@@ -3998,6 +4004,14 @@
     }
   }
   @media (width >= 66.25rem) {
+    .lg\:line-clamp-5 {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 5;
+    }
+  }
+  @media (width >= 66.25rem) {
     .lg\:block {
       display: block;
     }
@@ -4065,6 +4079,11 @@
     }
   }
   @media (width >= 66.25rem) {
+    .lg\:h-64 {
+      height: calc(var(--spacing) * 64);
+    }
+  }
+  @media (width >= 66.25rem) {
     .lg\:h-\[39px\] {
       height: 39px;
     }
@@ -4112,6 +4131,11 @@
   @media (width >= 66.25rem) {
     .lg\:w-12 {
       width: calc(var(--spacing) * 12);
+    }
+  }
+  @media (width >= 66.25rem) {
+    .lg\:w-64 {
+      width: calc(var(--spacing) * 64);
     }
   }
   @media (width >= 66.25rem) {
