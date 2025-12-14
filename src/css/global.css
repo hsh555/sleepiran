@@ -74,6 +74,7 @@
   /* fonts */
   --font-dana: "Dana";
 
+  --breakpoint-xs: 30rem; /* 480px */
   --breakpoint-lg: 66.25rem; /* 1060px */
 }
 
@@ -138,6 +139,7 @@
   box-sizing: content-box;
   scrollbar-width: none; /* firefox */
 }
+
 .scroll-content::-webkit-scrollbar { display: none; } /* chrome/safari/edge */
 
   .scroll-bar {
