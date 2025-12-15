@@ -181,7 +181,7 @@
     @apply inset-0! bg-black/30! backdrop-blur-sm!;
 
     .modal-box {
-      @apply bg-white! rounded-[8px]!;
+      @apply bg-white! rounded-lg!;
     }
   }
 

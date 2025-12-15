@@ -1,7 +1,7 @@
 .btn {
   @apply no-underline gap-2 h-11 px-4 border inline-flex cursor-pointer select-none 
          items-center justify-center border-transparent text-center 
-         transition duration-100 ease-in-out rounded-md md:rounded-[8px];
+         transition duration-100 ease-in-out rounded-md md:rounded-lg;
 
   /* default btn */
   @apply bg-gray-4 text-sm;
@@ -52,7 +52,7 @@
     @apply border-sky-blue bg-sky-blue text-white outline-sky-blue;
     @media (hover: hover) {
       &:hover {
-        @apply border-sky-blue-shade-1 bg-sky-blue-shade-1;
+        @apply border-sky-blue bg-sky-blue;
       }
     }
   }
