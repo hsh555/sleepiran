@@ -2796,9 +2796,6 @@
   .rounded-4xl {
     border-radius: var(--radius-4xl);
   }
-  .rounded-\[6px\] {
-    border-radius: 6px;
-  }
   .rounded-\[10px\] {
     border-radius: 10px;
   }
@@ -2831,10 +2828,6 @@
   }
   .rounded-xs\! {
     border-radius: var(--radius-xs) !important;
-  }
-  .rounded-t-\[8px\] {
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
   }
   .rounded-t-lg {
     border-top-left-radius: var(--radius-lg);
@@ -2953,9 +2946,6 @@
   }
   .bg-danger {
     background-color: var(--color-danger);
-  }
-  .bg-dark {
-    background-color: var(--color-dark);
   }
   .bg-gray-1\/40 {
     background-color: var(--color-gray-1);
@@ -5897,6 +5887,16 @@
   opacity: 0;
   position: fixed;
   top: -16px;
+}
+.rating *:checked,
+.rating *[aria-checked="true"],
+.rating *[aria-current="true"],
+.rating *:has(~ *:checked, ~ *[aria-checked="true"], ~ *[aria-current="true"]) {
+  opacity: 1;
+}
+.rating *:hover,
+.rating *:has(~ *:hover) {
+  opacity: 1;
 }
 @layer base {
   :root {

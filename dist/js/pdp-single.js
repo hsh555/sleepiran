@@ -210,7 +210,7 @@ document.getElementById("closeLightbox").addEventListener("click", () => {
   document.getElementById("lightbox-wrapper").classList.add("hidden");
 });
 
-// Product Navigation 
+// Product Navigation
 const openProductNavMenuBtn = document.getElementById("openProductNavMenuBtn");
 const productNavMenu = document.getElementById("productNavMenu");
 const productNavPanel = document.getElementById("productNavPanel");
@@ -237,3 +237,17 @@ if (window.innerWidth < 768) {
   document.getElementById("tech-info-check-1").checked = false;
 }
 
+// Product Nav Scroll To Target
+document.querySelectorAll(".product-nav-item").forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    const targetId = link.dataset.target;
+    const targetEl = document.getElementById(targetId);
+
+    targetEl.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  });
+});

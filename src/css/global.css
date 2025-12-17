@@ -132,15 +132,17 @@
     --tt-bg: var(--color-gray-5);
   }
 
-.scroll-content {
-  height: 100%;
-  overflow-y: scroll;
-  padding-left: 8px;
-  box-sizing: content-box;
-  scrollbar-width: none; /* firefox */
-}
+  .scroll-content {
+    height: 100%;
+    overflow-y: scroll;
+    padding-left: 8px;
+    box-sizing: content-box;
+    scrollbar-width: none; /* firefox */
+  }
 
-.scroll-content::-webkit-scrollbar { display: none; } /* chrome/safari/edge */
+  .scroll-content::-webkit-scrollbar {
+    display: none;
+  } /* chrome/safari/edge */
 
   .scroll-bar {
     position: absolute;
@@ -171,7 +173,7 @@
     background: var(--sl-c-secondary);
     cursor: pointer;
     border-radius: 50px;
-    pointer-events: auto; 
+    pointer-events: auto;
     transition: background 0.15s;
   }
 }
@@ -260,4 +262,17 @@
   opacity: 0;
   position: fixed;
   top: -16px;
+}
+
+.rating *:checked,
+.rating *[aria-checked="true"],
+.rating *[aria-current="true"],
+.rating *:has(~ *:checked, ~ *[aria-checked="true"], ~ *[aria-current="true"]) {
+  opacity: 1;
+}
+
+/* حالت هاور */
+.rating *:hover,
+.rating *:has(~ *:hover) {
+  opacity: 1;
 }

@@ -111,3 +111,41 @@ wrappers.forEach((wrapper) => {
   });
   ro.observe(content, { childList: true, subtree: true, characterData: true });
 });
+
+// Scroll To Top
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
+
+// Quantity Change
+document.querySelectorAll(".qty").forEach((qty) => {
+  const valueEl = qty.querySelector(".qty-value");
+  const plus = qty.querySelector(".qty-plus");
+  const minus = qty.querySelector(".qty-minus");
+
+  if (!valueEl) return;
+
+  const getValue = () => {
+    const val = Number(valueEl.textContent);
+    return Number.isNaN(val) ? 0 : val;
+  };
+
+  const setValue = (val) => {
+    valueEl.textContent = Math.max(1, val);
+  };
+
+  if (plus) {
+    plus.addEventListener("click", () => {
+      setValue(getValue() + 1);
+    });
+  }
+
+  if (minus) {
+    minus.addEventListener("click", () => {
+      setValue(getValue() - 1);
+    });
+  }
+});

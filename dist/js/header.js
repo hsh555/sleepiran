@@ -73,40 +73,69 @@ document.addEventListener("click", function (event) {
   }
 });
 
-// Mobile Cart
-const openMobileCartBtn = document.getElementById("openMobileCartBtn");
-const openMobileCartDeskBtn = document.getElementById("openMobileCartDeskBtn");
-const mobileCart = document.getElementById("mobileCart");
+// // Mobile Cart
+// const openMobileCartBtn = document.getElementById("openMobileCartBtn");
+// const openMobileCartDeskBtn = document.getElementById("openMobileCartDeskBtn");
+// const mobileCart = document.getElementById("mobileCart");
 
-// Cart Panel
+// // Cart Panel
+// const cartPanel = document.getElementById("cartPanel");
+
+// openMobileCartBtn.addEventListener("click", () => {
+//   mobileCart.classList.remove("opacity-0", "pointer-events-none");
+//   cartPanel.classList.add("translate-x-full");
+
+//   document.body.classList.add("overflow-hidden");
+// });
+
+// if (openMobileCartDeskBtn) {
+//   openMobileCartDeskBtn.addEventListener("click", () => {
+//     mobileCart.classList.remove("opacity-0", "pointer-events-none");
+//     cartPanel.classList.add("translate-x-full");
+
+//     document.body.classList.add("overflow-hidden");
+//   });
+// }
+
+// function closeMobileCart() {
+//   cartPanel.classList.remove("translate-x-full");
+
+//   setTimeout(() => {
+//     mobileCart.classList.add("opacity-0", "pointer-events-none");
+//     openMobileCartBtn.classList.remove("hidden");
+//     if (openMobileCartDeskBtn) openMobileCartDeskBtn.classList.remove("hidden");
+//     document.body.classList.remove("overflow-hidden");
+//   }, 300);
+// }
+
+// Cart elements (فقط cart هنوز می‌تونه id داشته باشه)
+const mobileCart = document.getElementById("mobileCart");
 const cartPanel = document.getElementById("cartPanel");
 
-openMobileCartBtn.addEventListener("click", () => {
-  mobileCart.classList.remove("opacity-0", "pointer-events-none");
-  cartPanel.classList.add("translate-x-full");
+// همه دکمه‌هایی که cart رو باز می‌کنن
+const openCartButtons = document.querySelectorAll(".open-cart");
 
-  document.body.classList.add("overflow-hidden");
-});
+// Guard: اگر cart وجود نداشت، هیچی اجرا نشه
+if (mobileCart && cartPanel) {
 
-if (openMobileCartDeskBtn) {
-  openMobileCartDeskBtn.addEventListener("click", () => {
-    mobileCart.classList.remove("opacity-0", "pointer-events-none");
-    cartPanel.classList.add("translate-x-full");
-
-    document.body.classList.add("overflow-hidden");
+  openCartButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      mobileCart.classList.remove("opacity-0", "pointer-events-none");
+      cartPanel.classList.add("translate-x-full");
+      document.body.classList.add("overflow-hidden");
+    });
   });
+
+  window.closeMobileCart = function () {
+    cartPanel.classList.remove("translate-x-full");
+
+    setTimeout(() => {
+      mobileCart.classList.add("opacity-0", "pointer-events-none");
+      document.body.classList.remove("overflow-hidden");
+    }, 300);
+  };
 }
 
-function closeMobileCart() {
-  cartPanel.classList.remove("translate-x-full");
-
-  setTimeout(() => {
-    mobileCart.classList.add("opacity-0", "pointer-events-none");
-    openMobileCartBtn.classList.remove("hidden");
-    if (openMobileCartDeskBtn) openMobileCartDeskBtn.classList.remove("hidden");
-    document.body.classList.remove("overflow-hidden");
-  }, 300);
-}
 
 // Mobile Search
 const openMobileSearchBtn = document.getElementById("openMobileSearchBtn");
